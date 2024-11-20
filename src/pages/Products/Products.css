@@ -1,0 +1,356 @@
+.image-icon {
+  position: static;
+  border-radius: 11.95px;
+  max-width: 100%;
+  overflow: hidden;
+  height: 298.7px;
+  flex: none;
+  flex-shrink: 0;
+  object-fit: cover;
+  filter: drop-shadow(0px 0px 15.1734px rgba(0, 0, 0, 0.12));
+}
+
+.span {
+  text-decoration: line-through;
+  color: #f62b2b;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.span1 {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Matter;
+  color: #1c6bff;
+}
+
+.products-tab-switch-control-with {
+  width: 294px;
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  color: #333;
+}
+.div2 {
+  align-self: stretch;
+  position: relative;
+  font-size: 14px;
+  color: #f62b2b;
+}
+.switch-control-with-remote-1-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-left: 15px;
+}
+
+.image-parent1 {
+  width: 299.1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 18px;
+}
+.card-container {
+  width: 1392px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 18px;
+}
+
+.products-number {
+  color: #333;
+  height: fit-content;
+  margin-bottom: 10px;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.products-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.products-tab-title {
+  font-size: 60px;
+  font-weight: 600;
+  font-family: Matter-Semibold;
+  line-height: 72px;
+  margin-bottom: 85px;
+}
+.products1 {
+  text-transform: lowercase;
+}
+.products1::first-letter {
+  text-transform: capitalize;
+}
+
+.filter {
+  position: relative;
+}
+.filter-icon {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.filter-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.sort-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.filter-sort-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  color: #666;
+  margin-right: 20px;
+}
+
+.product-tab-active {
+  border-bottom: 2px solid #1c6bff !important;
+  font-size: 22px;
+  color: #1c6bff !important;
+}
+.tab-wrapper {
+  height: 50px;
+  text-align: center;
+  padding: 12px 30px;
+  box-sizing: border-box;
+  border-radius: 0px;
+  outline: none;
+  background-color: #fbfbfb;
+  border: none;
+  color: #747474;
+  cursor: pointer;
+}
+.three-tab-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  color: #747474;
+}
+.products-tab-container {
+  width: 1392px;
+  height: 50px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e4e4e4;
+}
+.vector-parent {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1512px;
+  height: 1313.4px;
+  font-size: 18px;
+}
+.porducts-tab {
+  width: 1512px;
+  background-color: #fbfbfb;
+  overflow: auto;
+  text-align: left;
+  font-size: 20px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.products-tab-title.hidden {
+  display: none;
+}
+
+.products-tab-title {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.products-tab-title.scrolled {
+  opacity: 0;
+}
+
+@media (max-width: 850px) {
+  .products-tab-title {
+    margin-bottom: 0;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.2px;
+    text-align: left;
+  }
+  .products-tab-container {
+    width: 834px;
+    height: 43.58px;
+  }
+  .tab-wrapper {
+    font-family: Matter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: left;
+    background-color: transparent;
+  }
+  .filter-parent,
+  .sort-parent {
+    font-family: Matter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: left;
+  }
+  .filter-icon {
+    width: 18px;
+    height: 18px;
+  }
+  .products-number {
+    font-family: Matter;
+    font-size: 9.7px;
+    font-weight: 400;
+    line-height: 11.64px;
+    text-align: left;
+  }
+  .card-container {
+    width: 750px;
+    gap: 30px;
+  }
+  .image-parent1 {
+    width: 160.93px;
+    height: 220.87px;
+    gap: 13.47px;
+  }
+  .image-icon {
+    width: 160.93px;
+    height: 160.93px;
+    border-radius: 6.44px 0px 0px 0px;
+  }
+  .switch-control-with-remote-1-parent {
+    width: 161.17px;
+    height: 55px;
+    opacity: 0px;
+  }
+  .products-tab-switch-control-with {
+    font-family: Matter;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 14.63px;
+    text-align: left;
+    width: 155px;
+    height: 15px;
+  }
+  .span {
+    text-decoration: line-through;
+    font-family: Matter;
+    font-size: 7.54px;
+    font-weight: 400;
+    line-height: 9.05px;
+    text-align: left;
+  }
+  .span1 {
+    font-family: Matter;
+    font-size: 7.54px;
+    font-weight: 400;
+    line-height: 9.05px;
+    text-align: left;
+  }
+
+  .selected-product-view {
+    width: 160.93px;
+    height: 220.87px;
+    gap: 13.47px;
+  }
+}
+
+@media (max-width: 390px) {
+  .products-tab-container {
+    flex-direction: column;
+    gap: 10px;
+    width: 390px;
+    height: 36px;
+    padding: inherit;
+    opacity: 0px;
+    border-bottom: none;
+  }
+  .tab-wrapper {
+    width: 111px;
+    height: 24px;
+    padding: 5px 8px 5px 8px;
+    gap: 0px;
+    border: 0px 0px 1px 0px;
+    opacity: 0px;
+  }
+
+  .mv-filter-and-sort {
+    width: 380px;
+    height: 44px;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .products-number {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: left;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 358px;
+    gap: 10px;
+  }
+  .products-tab-switch-control-with {
+    font-family: Matter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.96px;
+    text-align: left;
+    overflow: hidden;
+  }
+  .span {
+    font-family: Matter;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13.2px;
+    text-align: left;
+  }
+  .span1 {
+    font-family: Matter;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15.6px;
+    text-align: left;
+  }
+  .switch-control-with-remote-1-parent {
+    width: 167.34px;
+    gap: 1.72px;
+    opacity: 0px;
+  }
+}

@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Matter";
+  src: url("./fonts/matter-font/Matter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Matter-Medium";
+  src: url("./fonts/matter-font/Matter-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Matter-Semibold";
+  src: url("./fonts/matter-font/Matter-SemiBold.ttf") format("truetype");
+}
+
+body {
+  font-family: "Matter", sans-serif;
+}

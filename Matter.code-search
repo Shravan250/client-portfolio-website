@@ -1,0 +1,187 @@
+# Query: Matter
+# ContextLines: 1
+
+43 results - 15 files
+
+index.html:
+  8      <link rel="stylesheet"
+  9:       href="https://fonts.googleapis.com/css2?family=Matter:wght@400;500;600&display=swap" />
+  10      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+test.css:
+  459    color: #545454;
+  460:   font-family: Matter;
+  461  }
+
+test.html:
+  8          <link rel="stylesheet"
+  9:             href="./fonts/matter-font/Matter-Regular.ttf" />
+  10  
+
+src/components/Promo/Promo.css:
+  46    font-weight: 500;
+  47:   font-family: Matter;
+  48    font-size: 24px;
+
+src/components/SmartRemoteControl/SmartRemoteControl.css:
+   60    .SRC-title-2 {
+   61:   font-family: Matter;
+   62    font-size: 42px;
+
+   73    letter-spacing: -0.01em;
+   74:   font-family: Matter;
+   75    color: #767676;
+
+   94    margin-bottom: 3px;
+   95:   font-family: Matter;
+   96    font-size: 20px;
+
+  112    color: #525252;
+  113:   font-family: Matter;
+  114  }
+
+src/components/SolutionSection/SolutionSection.css:
+   13  .solutions-container .our-solutions-parent .elevate-your-home {
+   14:   font-family: Matter;
+   15    font-size: 62px;
+
+  122    color: #1d1d1d;
+  123:   font-family: Matter;
+  124  }
+
+src/components/VoiceControl/VoiceControl.css:
+  55    text-align: left;
+  56:   font-family: Matter;
+  57  }
+
+src/layout/layout.css:
+  29    font-size: 50px;
+  30:   font-family: Matter;
+  31    display: flex;
+
+src/pages/AboutUs/AboutUs.css:
+   12  .about-us-heading {
+   13:   font-family: Matter;
+   14    font-size: 40px;
+
+   36  .driving-the-future {
+   37:   font-family: Matter;
+   38    font-size: 62px;
+
+   55    color: #656565;
+   56:   font-family: Matter;
+   57    font-size: 15px;
+
+   64    color: #656565;
+   65:   font-family: Matter;
+   66    font-size: 15px;
+
+  119    color: #656565;
+  120:   font-family: Matter;
+  121    width: 1390px;
+
+  143    height: 71px;
+  144:   font-family: Matter;
+  145    font-size: 62px;
+
+  155    height: 58px;
+  156:   font-family: Matter;
+  157    font-weight: 400;
+
+  174    font-weight: 500;
+  175:   font-family: Matter;
+  176    font-size: 18.78px;
+
+src/pages/FooterPages/CRPolicy/CRPolicy.css:
+  12    opacity: 0px;
+  13:   font-family: Matter;
+  14    font-size: 60px;
+
+  42  .CRP .CRP-contents .CRP-points .CRP-points-ol {
+  43:   font-family: Matter;
+  44    font-size: 24px;
+
+  51  .CRP .CRP-contents .CRP-points .CRP-points-ol .CRP-points-heading {
+  52:   font-family: Matter;
+  53    font-size: 24px;
+
+  61  .CRP .CRP-contents .CRP-points .CRP-points-ol .CRP-points-description {
+  62:   font-family: Matter;
+  63    font-size: 24px;
+
+  71  .CRP .CRP-contents .CRP-points-description {
+  72:   font-family: Matter;
+  73    font-size: 24px;
+
+src/pages/FooterPages/FAQ/FAQ.css:
+  12    opacity: 0px;
+  13:   font-family: Matter;
+  14    font-size: 60px;
+
+  43  .FAQ .FAQ-contents .FAQ-points .FAQ-points-ol {
+  44:   font-family: Matter;
+  45    font-size: 24px;
+
+  53  .FAQ .FAQ-contents .FAQ-points .FAQ-points-ol .FAQ-points-heading {
+  54:   font-family: Matter;
+  55    font-size: 24px;
+
+  63  .FAQ .FAQ-contents .FAQ-points .FAQ-points-ol .FAQ-points-description {
+  64:   font-family: Matter;
+  65    font-size: 24px;
+
+src/pages/FooterPages/Privacy_policy/Privacy_policy.css:
+  12    opacity: 0px;
+  13:   font-family: Matter;
+  14    font-size: 60px;
+
+  42  .PP .PP-contents .PP-points .PP-points-heading {
+  43:   font-family: Matter;
+  44    font-size: 24px;
+
+  52  .PP .PP-contents .PP-points .PP-points-description {
+  53:   font-family: Matter;
+  54    font-size: 24px;
+
+  61  .PP .PP-contents .PP-points-description {
+  62:   font-family: Matter;
+  63    font-size: 24px;
+
+src/pages/FooterPages/Terms_and_Conditions/Terms_and_Conditions.css:
+  12    opacity: 0px;
+  13:   font-family: Matter;
+  14    font-size: 60px;
+
+  39    flex-direction: column;
+  40:   font-family: Matter;
+  41    font-size: 24px;
+
+  63  .TC .TC-contents .TC-points .TC-points-ol {
+  64:   font-family: Matter;
+  65    font-size: 24px;
+
+  72  .TC .TC-contents .TC-points .TC-points-ol .TC-points-heading {
+  73:   font-family: Matter;
+  74    font-size: 24px;
+
+  82  .TC .TC-contents .TC-points .TC-points-ol .TC-points-description {
+  83:   font-family: Matter;
+  84    font-size: 20px;
+
+src/pages/Products/Products.css:
+   22    font-weight: 500;
+   23:   font-family: Matter;
+   24    color: #1c6bff;
+
+  241    color: #000;
+  242:   font-family: Matter;
+  243  }
+
+src/pages/SingleProduct/SingleProduct.css:
+   7    color: #525252;
+   8:   font-family: Matter;
+   9  }
+
+  82    font-weight: 500;
+  83:   font-family: Matter;
+  84    color: #1c6bff;

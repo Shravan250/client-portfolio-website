@@ -1,0 +1,50 @@
+.badge-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.badge-container .badge-line {
+  width: 296px;
+  max-height: 100%;
+}
+
+.badge-container .BS-image-336-icon {
+  width: 161px;
+  height: 145px;
+  object-fit: cover;
+}
+
+.badge-container .BS-image-removebg-preview-2-1 {
+  width: 126px;
+  height: 145px;
+  object-fit: cover;
+}
+
+@media (max-width: 850px) {
+  .badge-container {
+    width: 754px;
+    height: 92.73px;
+    gap: 63.95px;
+    opacity: 0px;
+  }
+
+  .badge-container .badge-line {
+    width: 189.3px;
+    border: 0.64px;
+  }
+
+  .badge-container .BS-image-336-icon {
+    width: 102.96px;
+    height: 92.73px;
+    object-fit: cover;
+  }
+
+  .badge-container .BS-image-removebg-preview-2-1 {
+    width: 80.58px;
+    height: 92.73px;
+    object-fit: cover;
+  }
+}

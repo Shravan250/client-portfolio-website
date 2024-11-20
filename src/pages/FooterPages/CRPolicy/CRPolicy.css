@@ -1,0 +1,82 @@
+.CRP {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 161px;
+}
+
+.CRP .CRP-heading {
+  width: 799px;
+  height: 72px;
+  opacity: 0px;
+  font-family: Matter;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 72px;
+  text-align: left;
+  color: #000000;
+}
+
+.CRP .CRP-contents {
+  width: 1388px;
+  height: 551px;
+  gap: 20px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #4c4c4c;
+}
+
+.CRP .CRP-contents .CRP-points {
+  width: 1388px;
+  height: 897px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  opacity: 0px;
+}
+
+.CRP .CRP-contents .CRP-points .CRP-points-ol {
+  font-family: Matter;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+  color: black;
+  padding-left: 20px;
+}
+
+.CRP .CRP-contents .CRP-points .CRP-points-ol .CRP-points-heading {
+  font-family: Matter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  text-align: left;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.CRP .CRP-contents .CRP-points .CRP-points-ol .CRP-points-description {
+  font-family: Matter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+  color: #707070;
+  margin-bottom: 20px;
+}
+
+.CRP .CRP-contents .CRP-points-description {
+  font-family: Matter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+  color: #707070;
+}
+
+p {
+  margin: 0;
+}
