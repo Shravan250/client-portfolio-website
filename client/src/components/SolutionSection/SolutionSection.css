@@ -1,0 +1,276 @@
+p {
+  margin: 0;
+}
+.our-solutions {
+  font-family: Metal;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 34.5px;
+  text-align: center;
+}
+.elevate-your-home {
+  font-family: Matter-Semibold;
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 71.3px;
+  text-align: center;
+  color: #000000;
+}
+.our-solutions-parent {
+  width: 777px;
+  height: 193px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 17px;
+}
+
+.modular-design-means {
+  font-weight: 500;
+  width: 351px;
+  line-height: 36.3px;
+  display: inline-block;
+  flex-shrink: 0;
+  font-family: Matter;
+}
+.span-90 {
+  font-weight: 600;
+  color: #1c6bff;
+  font-family: Matter-Medium;
+}
+
+.points-oem-container .points {
+  margin-block-start: 0;
+  margin-block-end: 8px;
+  margin: 0;
+}
+
+.points-oem-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 14px;
+  line-height: 20px;
+  color: #656565;
+}
+
+.title-modular-design-parent {
+  width: 202px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 17px;
+}
+
+.hardware-design-parent {
+  width: 199px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 17px;
+}
+
+.embedded-software-parent {
+  width: 229px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 17px;
+}
+
+.three-modular-design {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 65px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+  text-align: left;
+  font-family: Matter-Medium;
+}
+
+.modular-design-means-easy-part-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 165px;
+  text-align: left;
+  color: #1d1d1d;
+  font-family: Matter;
+}
+
+.solutions-container {
+  width: 1276px;
+  height: 527px;
+  gap: 190px;
+  opacity: 0px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  font-size: 30px;
+  color: #383838;
+  font-family: Metal;
+}
+
+@media (max-width: 850px) {
+  .solutions-container {
+    width: 735px;
+    height: 395px;
+    gap: 151px;
+    opacity: 0px;
+  }
+  .our-solutions-parent {
+    width: 401px;
+    height: 122px;
+    gap: 17px;
+    opacity: 0px;
+  }
+  .our-solutions {
+    font-family: Metal;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+  }
+  .elevate-your-home {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 41.4px;
+    text-align: center;
+  }
+  .modular-design-means-easy-part-parent {
+    width: 735px;
+    height: 122px;
+    gap: 60px;
+    opacity: 0px;
+  }
+  .modular-design-means {
+    font-family: Matter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: left;
+    width: 173px;
+    height: 76px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .span-90 {
+    font-family: Matter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.36px;
+    text-align: left;
+  }
+  .three-modular-design {
+    width: 502px;
+    height: 122px;
+    gap: 39px;
+    opacity: 0px;
+  }
+  .title-modular-design {
+    font-family: Matter-Medium;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 14.95px;
+    text-align: left;
+  }
+
+  .points-oem-container {
+    font-family: Matter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 11.88px;
+    text-align: left;
+    gap: 8px;
+  }
+  .title-modular-design-parent {
+    width: 151px;
+    height: 102px;
+    gap: 15px;
+    opacity: 0px;
+  }
+  .hardware-design-parent {
+    width: 150px;
+    height: 122px;
+    gap: 15px;
+    opacity: 0px;
+  }
+  .embedded-software-parent {
+    width: 123px;
+    height: 54px;
+    gap: 15px;
+    opacity: 0px;
+  }
+}
+
+@media (max-width: 390px) {
+  .solutions-container {
+    width: 735px;
+    height: 527px;
+    gap: 62px;
+  }
+  .our-solutions-parent {
+    width: 275px;
+    gap: 17px;
+    opacity: 0px;
+  }
+  .our-solutions {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.1px;
+    text-align: center;
+  }
+  .elevate-your-home {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 27.6px;
+    text-align: center;
+  }
+  .mv-modular-design-means-easy-part-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 355px;
+    height: 369px;
+    min-width: 355px;
+    gap: 60px;
+  }
+  .modular-design-means {
+    width: 355px;
+    height: 38px;
+  }
+  .three-modular-design {
+    width: 355px;
+    height: 271px;
+  }
+  .points-oem-container {
+    gap: 15px;
+  }
+  .points {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.5px;
+    text-align: left;
+  }
+  .title-modular-design {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.4px;
+    text-align: left;
+  }
+}

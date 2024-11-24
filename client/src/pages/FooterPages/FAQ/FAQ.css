@@ -1,0 +1,135 @@
+.FAQ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 151px;
+}
+
+.FAQ-heading {
+  width: 116px;
+  height: 72px;
+  opacity: 0px;
+  font-family: Matter;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 72px;
+  text-align: left;
+  color: #000000;
+}
+
+.FAQ-contents {
+  width: 1388px;
+  height: 1285px;
+  gap: 20px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #4c4c4c;
+}
+
+.FAQ-points {
+  width: 1388px;
+  height: 897px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  opacity: 0px;
+}
+
+.FAQ-points-ol {
+  font-family: Matter;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+  color: black;
+  width: 1340px;
+  padding-left: 20px;
+}
+
+.FAQ-points-heading {
+  font-family: Matter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  text-align: left;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.FAQ-points-description {
+  font-family: Matter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  text-align: left;
+  color: #707070;
+  margin-bottom: 40px;
+}
+
+p {
+  margin: 0;
+}
+
+@media (max-width: 850px) {
+  .FAQ {
+    gap: 70px;
+  }
+  .FAQ-heading {
+    width: 70px;
+    height: 43px;
+    font-family: Matter;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.2px;
+    text-align: left;
+  }
+  .FAQ-contents {
+    width: 754px;
+    height: 900px;
+  }
+  .FAQ-points-ol,
+  .FAQ-points {
+    width: 754px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    text-align: left;
+  }
+  .FAQ-points-description,
+  .FAQ-points-heading {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 390px) {
+  .FAQ {
+    gap: 0px;
+  }
+  .FAQ-contents {
+    width: 350px;
+    height: 1254px;
+  }
+  .FAQ-points-ol,
+  .FAQ-points {
+    width: 350px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    text-align: left;
+    margin-left: 1px;
+  }
+  .FAQ-points-description,
+  .FAQ-points-heading {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    text-align: left;
+  }
+}

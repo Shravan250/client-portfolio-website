@@ -1,0 +1,172 @@
+.CRP {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 161px;
+}
+
+.CRP-heading {
+  width: 799px;
+  height: 72px;
+  opacity: 0px;
+  font-family: Matter;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 72px;
+  text-align: left;
+  color: #000000;
+}
+
+.CRP-contents {
+  width: 1388px;
+  height: 551px;
+  gap: 20px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #4c4c4c;
+}
+
+.CRP-points {
+  width: 1388px;
+  height: 897px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  opacity: 0px;
+}
+
+.CRP-points-ol {
+  font-family: Matter;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+  color: black;
+  padding-left: 20px;
+}
+
+.CRP-points-ol li {
+  margin-bottom: 20px;
+}
+
+.CRP-points-heading {
+  font-family: Matter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  text-align: left;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.CRP-point-description {
+  font-family: Matter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+  color: #707070;
+  margin-bottom: 20px;
+}
+
+.CRP-points-description {
+  font-family: Matter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+  color: #707070;
+}
+
+p {
+  margin: 0;
+}
+
+@media (max-width: 850px) {
+  .CRP {
+    gap: 90px;
+  }
+  .CRP-heading {
+    width: 480px;
+    height: 43px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.2px;
+    text-align: left;
+  }
+  .CRP-contents {
+    width: 754px;
+    height: 369px;
+  }
+  .CRP-point-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: left;
+  }
+  .CRP-points {
+    width: 754px;
+  }
+  .CRP-points-ol {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    text-align: left;
+  }
+  .CRP-points-ol li {
+    margin-bottom: 13px;
+  }
+  .CRP-points-heading {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 8.2px;
+    text-align: left;
+  }
+  .CRP-points-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 390px) {
+  .CRP-contents {
+    width: 358px;
+    gap: 0px;
+    height: 570px;
+  }
+  .CRP-point-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: left;
+  }
+  .CRP-points {
+    width: 358px;
+  }
+  .CRP-points-ol {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    text-align: left;
+  }
+  .CRP-points-ol li {
+    margin-bottom: 13px;
+  }
+  .CRP-points-heading {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 13.2px;
+    text-align: left;
+  }
+  .CRP-points-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    text-align: left;
+  }
+}

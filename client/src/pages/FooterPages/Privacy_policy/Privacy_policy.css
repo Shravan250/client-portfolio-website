@@ -1,0 +1,130 @@
+.PP {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 161px;
+}
+
+.PP-heading {
+  width: 381px;
+  height: 72px;
+  opacity: 0px;
+  font-family: Matter;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 72px;
+  text-align: left;
+  color: #000000;
+}
+
+.PP-contents {
+  width: 1388px;
+  height: 1085px;
+  gap: 10px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #4c4c4c;
+}
+
+.PP-points {
+  width: 1388px;
+  height: 897px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0px;
+}
+
+.PP-points-heading {
+  font-family: Matter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  text-align: left;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.PP-points-description {
+  font-family: Matter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  text-align: left;
+  color: #707070;
+  margin-bottom: 40px;
+}
+.PP-points-description {
+  font-family: Matter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  text-align: left;
+  color: #707070;
+  margin-bottom: 40px;
+}
+
+p {
+  margin: 0;
+}
+
+@media (max-width: 850px) {
+  .PP {
+    width: 754px;
+    gap: 70px;
+  }
+  .PP-heading {
+    width: 229px;
+    height: 43px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.2px;
+    text-align: left;
+  }
+  .PP-contents {
+    width: 754px;
+    height: 650px;
+  }
+  .PP-points {
+    width: 754px;
+    height: 576px;
+    gap: 0px;
+  }
+  .PP-points-description,
+  .PP-points-heading {
+    font-family: Matter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 390px) {
+  .PP {
+    width: 358px;
+    gap: 0px;
+  }
+  .PP-contents {
+    width: 358px;
+    height: 1000px;
+  }
+  .PP-points {
+    width: 358px;
+    gap: 0px;
+  }
+  .PP-points-description,
+  .PP-points-heading {
+    font-family: Matter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}

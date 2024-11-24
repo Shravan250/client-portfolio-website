@@ -1,0 +1,533 @@
+/* Keyframes for fade-out
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* Keyframes for fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Keyframes for slide-in */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Initial hidden state */
+.hidden {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+/* Animation classes */
+.fade-out-animation {
+  animation: fadeOut 0.5s forwards ease-in-out;
+}
+
+.fade-in-animation {
+  animation: fadeIn 0.5s forwards ease-in-out;
+}
+
+.slide-in-animation {
+  animation: slideIn 0.7s forwards ease-in-out;
+}
+
+.about-us-landing {
+  width: 1512px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 10;
+  top: 90px;
+  left: 0;
+  background-color: white;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about-us-main-content {
+  transition: transform 0.5s ease;
+}
+
+.iot {
+  color: #1c6bff;
+}
+.AboutUs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  width: 1512px;
+}
+
+.about-us-heading {
+  font-family: Matter;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 51.45px;
+
+  width: 1239px;
+  height: 153px;
+}
+
+.smart-home-icon {
+  width: 390px;
+  height: 390px;
+  object-fit: cover;
+}
+
+.our-mission {
+  font-family: Metal;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 34.5px;
+  text-align: center;
+  color: #383838;
+}
+.driving-the-future {
+  font-family: Matter-Semibold;
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 71.3px;
+  text-align: center;
+  color: #000000;
+}
+.our-mission-parent {
+  width: 777px;
+  height: 193px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 17px;
+}
+.main-content-p {
+  align-self: stretch;
+  color: #656565;
+  font-family: Matter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+}
+.main-content-p-3 {
+  align-self: stretch;
+  color: #656565;
+  font-family: Matter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  width: 287.5px;
+  height: 51px;
+}
+.main-content-heading {
+  align-self: stretch;
+  position: relative;
+  font-size: 28px;
+  line-height: 115%;
+  font-weight: 500;
+  color: #383838;
+  font-family: Matter-Medium;
+}
+
+.mission-content-container {
+  align-self: stretch;
+  flex: 1;
+  border-right: 1px solid #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px 30px 20px;
+  gap: 40px;
+  width: 347.5px;
+}
+
+.mission-content-container-1 {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+  width: 287.5px;
+  height: 111px;
+}
+
+.no-border {
+  border: none;
+}
+
+.mission-content {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 14px;
+  color: #656565;
+  font-family: Matter;
+  width: 1390px;
+  height: 262px;
+}
+.aboutus-mission {
+  width: 1510px;
+  height: 982px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 60px;
+  box-sizing: border-box;
+  gap: 160px;
+  font-size: 30px;
+  color: #383838;
+  font-family: Metal;
+}
+.join-us {
+  align-self: stretch;
+  line-height: 115%;
+  font-weight: 600;
+  width: 1052px;
+  height: 71px;
+  font-family: Matter-Semibold;
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 71.3px;
+  text-align: center;
+}
+.be-a-part {
+  align-self: stretch;
+  font-size: 24px;
+  color: #656565;
+  width: 1052px;
+  height: 58px;
+  font-family: Matter;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: center;
+}
+.join-us-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  width: 1052px;
+  height: 169px;
+}
+
+.AU-contact {
+  height: 23px;
+  font-weight: 500;
+  font-family: Matter;
+  font-size: 18.78px;
+  line-height: 22.53px;
+
+  text-align: center;
+  color: #f7f7f7;
+}
+.AU-contact-us {
+  width: 142px;
+  position: relative;
+  border-radius: 58.68px;
+  height: 55.2px;
+  overflow: hidden;
+  flex-shrink: 0;
+  font-size: 18.78px;
+  background-color: #1c6bff;
+}
+.AU-contact-us:hover,
+.AU-contact-us:focus {
+  outline: none;
+}
+.join-us-container {
+  width: 1052px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  gap: 50px;
+  font-size: 62px;
+  color: #000;
+}
+
+p {
+  margin: 0;
+}
+
+@media (max-width: 850px) {
+  .AboutUs-container {
+    gap: 200px;
+  }
+  .about-us-heading {
+    width: 754px;
+    height: 164px;
+    font-family: Matter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 41.16px;
+    text-align: center;
+  }
+  .iot {
+    font-family: Matter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 41.16px;
+    text-align: center;
+  }
+  .smart-home-icon {
+    width: 341px;
+    height: 341px;
+  }
+  .aboutus-mission {
+    width: 834px;
+    height: 567.36px;
+    padding: 0px 33.14px 0px 33.14px;
+    gap: 88.37px;
+  }
+  .our-mission-parent {
+    width: 429.15px;
+    height: 114.39px;
+    gap: 9.39px;
+  }
+  .our-mission {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: center;
+  }
+  .driving-the-future {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 41.4px;
+    text-align: center;
+  }
+  .about-us-flex-wrap {
+    width: 700px;
+    height: 341.6px;
+    gap: 40px;
+    display: flex;
+  }
+  .mission-content {
+    width: 700px;
+    height: 341.6px;
+    gap: 40px;
+  }
+  .mission-content-container {
+    width: 350px;
+    height: 150.8px;
+    gap: 22.09px;
+  }
+  .mission-content-container-1 {
+    width: 290px;
+    height: 53.57px;
+    gap: 16.57px;
+    opacity: 0px;
+  }
+  .main-content-p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: left;
+  }
+  .main-content-heading {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    text-align: left;
+  }
+  .main-content-p-3 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: left;
+  }
+  .join-us-container {
+    width: 754px;
+    height: 180.37px;
+    gap: 35.84px;
+    opacity: 0px;
+  }
+  .join-us-parent {
+    width: 754px;
+    height: 107.67px;
+    gap: 28.67px;
+  }
+  .join-us {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 41.4px;
+    text-align: center;
+    width: 754px;
+    height: 41px;
+  }
+  .be-a-part {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: center;
+    width: 754px;
+    height: 38px;
+  }
+  .AU-contact-us {
+    width: 94.91px;
+    height: 36.86px;
+    gap: 0px;
+    border-radius: 39.22px;
+  }
+  .AU-contact {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.4px;
+    text-align: center;
+    width: 45px;
+    height: 14px;
+  }
+}
+
+@media (max-width: 390px) {
+  .AboutUs-container {
+    gap: 100px;
+  }
+  .about-us-heading {
+    width: 348px;
+    height: 168px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.78px;
+    text-align: center;
+  }
+  .iot {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.78px;
+    text-align: center;
+  }
+  .smart-home-icon {
+    width: 272px;
+    height: 272px;
+  }
+  .aboutus-mission {
+    width: 358px;
+    height: 590.09px;
+    gap: 52px;
+    padding: 0 10px;
+  }
+  .our-mission-parent {
+    width: 275px;
+    height: 91px;
+    gap: 17px;
+  }
+  .our-mission {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.4px;
+    text-align: center;
+  }
+  .driving-the-future {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 27.6px;
+    text-align: center;
+  }
+  .mission-content {
+    width: 358px;
+    height: 447.09px;
+    flex-direction: column;
+    gap: 20.3px;
+  }
+  .mission-content-container {
+    width: 320px;
+    height: 101.77px;
+    padding: 0px 0px 10px 0px;
+    gap: 11.3px;
+    border-right: 0px;
+    border-bottom: 1px solid #d9d9d9;
+  }
+  .main-content-p-3 {
+    width: 358px;
+    height: 32px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.6px;
+    text-align: left;
+  }
+  .mission-content-container-1 {
+    width: 358px;
+    height: 38.47px;
+    gap: 8.47px;
+  }
+  .main-content-heading {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.1px;
+    text-align: left;
+  }
+  .join-us-container {
+    width: 356px;
+    height: 250.51px;
+    gap: 35.84px;
+  }
+  .join-us-parent {
+    width: 356px;
+    height: 124.67px;
+    gap: 28.67px;
+  }
+  .join-us {
+    width: 356px;
+    height: 28px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 27.6px;
+    text-align: center;
+  }
+  .be-a-part {
+    width: 356px;
+    height: 68px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: center;
+  }
+  .AU-contact-us {
+    width: 102.98px;
+    height: 40px;
+  }
+  .AU-contact {
+    font-size: 13.02px;
+    font-weight: 500;
+    line-height: 15.62px;
+    text-align: center;
+  }
+}
