@@ -9,11 +9,15 @@ import twitter from "../../assets/LandingPage/Footer/Vector (2).svg";
 
 function Footer() {
   const [focusedField, setFocusedField] = useState(null);
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [phone, setPhone] = useState("");
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 390);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/contact/submit", {
+    const response = await fetch("http://localhost:5002/api/contact/submit", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, email, message, phone }),
@@ -60,6 +64,7 @@ function Footer() {
                       id="name"
                       className="footer-input"
                       placeholder="Snaji"
+                      onChange={(e) => setUsername(e.target.value)}
                       onFocus={() => setFocusedField("name")}
                       onBlur={() => setFocusedField(null)}
                     />
@@ -76,6 +81,7 @@ function Footer() {
                     <input
                       id="email"
                       className="footer-input"
+                      onChange={(e) => setEmail(e.target.value)}
                       onFocus={() => setFocusedField("email")}
                       onBlur={() => setFocusedField(null)}
                     />
@@ -92,6 +98,7 @@ function Footer() {
                     <textarea
                       id="message"
                       className="footer-input"
+                      onChange={(e) => setMessage(e.target.value)}
                       onFocus={() => setFocusedField("message")}
                       onBlur={() => setFocusedField(null)}
                     />
@@ -134,7 +141,7 @@ function Footer() {
                     className="eabrown-trademark-logo-on-whit"
                     alt
                     src={logo}
-                    onClick={() => (window.location.href = "/")} // Use window.location for logo
+                    onClick={() => (window.location.href = "/")}
                   />
                 </div>
                 <div className="top">
@@ -236,7 +243,7 @@ function Footer() {
                   className="mv-eabrown-trademark-logo-on-whit"
                   alt
                   src={logo}
-                  onClick={() => (window.location.href = "/")} // Use window.location for logo
+                  onClick={() => (window.location.href = "/")}
                 />
               </div>
               <div className="mv-bottom-section">
@@ -296,6 +303,7 @@ function Footer() {
                     <input
                       id="email"
                       className="footer-input"
+                      onChange={(e) => setEmail(e.target.value)}
                       onFocus={() => setFocusedField("email")}
                       onBlur={() => setFocusedField(null)}
                       placeholder="Enter email"
