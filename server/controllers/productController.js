@@ -13,46 +13,25 @@ const createProduct = async (req, res) => {
 
 // Get all products
 const getProducts = async (req, res) => {
-  const {
-    category = "Retrofit Switches",
-    sort = "lowToHigh",
-    minPrice = 0,
-    maxPrice = 10000,
-  } = req.query;
+  const { category } = req.query;
 
-  const parsedMinPrice = !isNaN(minPrice) ? parseFloat(minPrice) : 0;
-  const parsedMaxPrice = !isNaN(maxPrice) ? parseFloat(maxPrice) : 10000;
-
-  let sortOptions = {};
-  let filterOptions = {
-    category,
-    discountedPrice: { $gte: parsedMinPrice, $lte: parsedMaxPrice },
-  };
-
-  switch (sort) {
-    case "lowToHigh":
-      sortOptions.discountedPrice = 1;
-      break;
-    case "highToLow":
-      sortOptions.discountedPrice = -1;
-      break;
-    case "newest":
-      sortOptions.dateCreated = -1;
-      break;
-    case "featured":
-      filterOptions.isFeatured = true;
-      break;
-    default:
-      sortOptions.discountedPrice = 1;
-      break;
+  if (!category) {
+    return res.status(400).json({ message: "Category is required" });
   }
 
   try {
-    const products = await Product.find(filterOptions).sort(sortOptions);
+    const products = await Product.find({ category: category });
 
-    res.json(products);
+    if (products.length === 0) {
+      return res
+        .status(404)
+        .json({ message: "No products found in this category" });
+    }
+
+    return res.status(200).json(products);
   } catch (error) {
-    res.status(500).json({ message: "Error fetching products", error });
+    console.error(error);
+    return res.status(500).json({ message: "Internal Server Error" });
   }
 };
 
@@ -66,4 +45,8 @@ const getSingleProduct = async (req, res) => {
   }
 };
 
-module.exports = { createProduct, getProducts, getSingleProduct };
+module.exports = {
+  createProduct,
+  getProducts,
+  getSingleProduct,
+};

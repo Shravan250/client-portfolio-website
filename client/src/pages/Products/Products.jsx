@@ -62,15 +62,11 @@ const Products = () => {
     try {
       const params = new URLSearchParams({
         category: activeTab,
-        minPrice: minPrice || 0,
-        maxPrice: maxPrice || 10000,
-        sort: sortType,
       });
       const response = await fetch(
         `http://localhost:5002/api/products?${params}`
       );
       const data = await response.json();
-      console.log("Fetched Products:", data);
       setProducts(data);
     } catch (error) {
       console.error("Failed to fetch products:", error);
@@ -79,16 +75,63 @@ const Products = () => {
     }
   };
 
-  const filteredProducts = products.filter((product) => {
-    const withinPriceRange =
-      (!minPrice || product.discountedPrice >= minPrice) &&
-      (!maxPrice || product.discountedPrice <= maxPrice);
-    return withinPriceRange;
-  });
+  const filterProducts = (products) => {
+    const min = minPrice ? parseInt(minPrice) : 0;
+    const max = maxPrice ? parseInt(maxPrice) : 10000;
+
+    return products.filter((product) => {
+      const price = parseFloat(
+        product.discountedPrice.replace("₹", "").replace(",", "")
+      );
+      return price >= min && price <= max;
+    });
+  };
+
+  const sortProducts = (products) => {
+    return products
+      .filter((product) => {
+        if (sortType === "featured") {
+          return product.isFeatured;
+        }
+        return true;
+      })
+      .sort((a, b) => {
+        if (sortType === "lowToHigh") {
+          return (
+            parseFloat(a.discountedPrice.replace("₹", "").replace(",", "")) -
+            parseFloat(b.discountedPrice.replace("₹", "").replace(",", ""))
+          );
+        }
+        if (sortType === "highToLow") {
+          return (
+            parseFloat(b.discountedPrice.replace("₹", "").replace(",", "")) -
+            parseFloat(a.discountedPrice.replace("₹", "").replace(",", ""))
+          );
+        }
+        if (sortType === "newest") {
+          return new Date(b.dateCreated) - new Date(a.dateCreated);
+        }
+        return 0;
+      });
+  };
+
+  const getProcessedProducts = () => {
+    const activeTabProducts = products.filter(
+      (product) => product.category === activeTab
+    );
+
+    const filtered = applyFilter
+      ? filterProducts(activeTabProducts)
+      : activeTabProducts;
+
+    const sorted = applySort ? sortProducts(filtered) : filtered;
+
+    return sorted;
+  };
 
   useEffect(() => {
     fetchProducts();
-  }, [activeTab, minPrice, maxPrice, sortType]);
+  }, [activeTab]);
 
   const handleFilter = () => {
     setApplyFilter(true);
@@ -241,10 +284,10 @@ const Products = () => {
           </div>
           <div className="products-list">
             <div className="products-number">
-              {filteredProducts.length} Products
+              {getProcessedProducts().length} Products
             </div>
             <div className="card-container">
-              {filteredProducts.map((product) => (
+              {getProcessedProducts().map((product) => (
                 <ProductCard
                   key={product.id}
                   name={product.name}
@@ -374,7 +417,7 @@ const Products = () => {
           </div>
           <div className="products-list">
             <div className="card-container">
-              {filteredProducts.map((product) => (
+              {getProcessedProducts().map((product) => (
                 <ProductCard
                   key={product.id}
                   name={product.name}
