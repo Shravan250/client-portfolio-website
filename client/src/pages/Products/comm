@@ -1,0 +1,57 @@
+// const handleClick = () => {
+//   navigate("/single-product", { state: { productIndex: index } });
+// };
+
+// const filterProducts = (products) => {
+//   const min = minPrice ? parseInt(minPrice) : 0;
+//   const max = maxPrice ? parseInt(maxPrice) : 10000;
+
+//   return products.filter((product) => {
+//     const price = parseFloat(
+//       product.discountedPrice.replace("₹", "").replace(",", "")
+//     );
+//     return price >= min && price <= max;
+//   });
+// };
+
+// const sortProducts = (products) => {
+//   return products
+//     .filter((product) => {
+//       if (sortType === "featured") {
+//         return product.isFeatured;
+//       }
+//       return true;
+//     })
+//     .sort((a, b) => {
+//       if (sortType === "lowToHigh") {
+//         return (
+//           parseFloat(a.discountedPrice.replace("₹", "").replace(",", "")) -
+//           parseFloat(b.discountedPrice.replace("₹", "").replace(",", ""))
+//         );
+//       }
+//       if (sortType === "highToLow") {
+//         return (
+//           parseFloat(b.discountedPrice.replace("₹", "").replace(",", "")) -
+//           parseFloat(a.discountedPrice.replace("₹", "").replace(",", ""))
+//         );
+//       }
+//       if (sortType === "newest") {
+//         return new Date(b.dateCreated) - new Date(a.dateCreated);
+//       }
+//       return 0;
+//     });
+// };
+
+// const getProcessedProducts = () => {
+//   const activeTabProducts = productData.filter(
+//     (product) => product.category === activeTab
+//   );
+
+//   const filtered = applyFilter
+//     ? filterProducts(activeTabProducts)
+//     : activeTabProducts;
+
+//   const sorted = applySort ? sortProducts(filtered) : filtered;
+
+//   return sorted;
+// };

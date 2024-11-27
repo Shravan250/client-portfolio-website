@@ -17,16 +17,6 @@ const LandingPage = () => {
   const [animationInProgress, setAnimationInProgress] = useState(false);
   const [isScrollLocked, setIsScrollLocked] = useState(true);
 
-  // const [showInitialContent, setShowInitialContent] = useState(() => {
-  //   return !localStorage.getItem("initialContentShown");
-  // });
-
-  // useEffect(() => {
-  //   if (showInitialContent) {
-  //     localStorage.setItem("initialContentShown", "true");
-  //   }
-  // }, [showInitialContent]);
-
   const handleScrollEvent = (e) => {
     e.preventDefault();
 

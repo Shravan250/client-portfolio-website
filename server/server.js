@@ -6,6 +6,7 @@ const dotenv = require("dotenv");
 const connectDB = require("./config/db");
 const contactRoutes = require("./routes/contactRoutes");
 const cookiesMiddleware = require("./middlewares/cookies");
+const productRoutes = require("./routes/productRoutes");
 
 dotenv.config();
 connectDB();
@@ -21,6 +22,7 @@ app.use(cookiesMiddleware);
 
 // Routes
 app.use("/api/contact", contactRoutes);
+app.use("/api/products", productRoutes);
 
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
