@@ -47,7 +47,7 @@ const Layout = () => {
           <Route path={routes.privacy} element={<PrivacyPolicy />} />
           <Route path={routes.contact} element={<Contact />} />
           <Route path={routes.about} element={<AboutUs />} />
-          <Route path={routes.SmartSpace} element={<SmartSpace />} />
+          <Route path={routes.smartSpace} element={<SmartSpace />} />
         </Routes>
       </div>
       {location.pathname !== "/single-product" && <Footer className="footer" />}

@@ -10,7 +10,7 @@ const ProductCard = ({
   originalPrice,
   discountedPrice,
   imageSrc,
-  index,
+  id,
 }) => {
   const navigate = useNavigate();
   const handleClick = () => {
@@ -289,12 +289,11 @@ const Products = () => {
             <div className="card-container">
               {getProcessedProducts().map((product) => (
                 <ProductCard
-                  key={product.id}
                   name={product.name}
                   originalPrice={product.originalPrice}
                   discountedPrice={product.discountedPrice}
                   imageSrc={product.imageSrc[0]}
-                  id={product.id}
+                  id={product._id}
                 />
               ))}
             </div>
@@ -419,12 +418,11 @@ const Products = () => {
             <div className="card-container">
               {getProcessedProducts().map((product) => (
                 <ProductCard
-                  key={product.id}
                   name={product.name}
                   originalPrice={product.originalPrice}
                   discountedPrice={product.discountedPrice}
                   imageSrc={product.imageSrc[0]}
-                  id={product.id}
+                  id={product._id}
                 />
               ))}
             </div>

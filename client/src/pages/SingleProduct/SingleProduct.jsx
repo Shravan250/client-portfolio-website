@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./SingleProduct.css";
+import debounce from "lodash.debounce";
 import {
   up,
   down,
@@ -11,13 +12,68 @@ import {
   cross,
 } from "../../assets/SingleProduct/index";
 import productData from "../../../ProductData/productData";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 
 const SingleProduct = () => {
   const location = useLocation();
-  const { productIndex } = location.state || {};
+  const { id } = useParams();
+
+  const [currentProduct, setCurrentProduct] = useState(null);
   const [isHowItWorksVisible, setHowItWorksVisible] = useState(false);
   const [isLegalDisclaimerVisible, setLegalDisclaimerVisible] = useState(false);
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const [inquiryRaised, setInquiryRaised] = useState(false);
+  const [focusedField, setFocusedField] = useState(null);
+  const [isTablet, setIsTablet] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [mainImage, setMainImage] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      try {
+        setIsLoading(true);
+        const response = await fetch(
+          `http://localhost:5002/api/products/${id}`
+        );
+        if (!response.ok) {
+          throw new Error(`Failed to fetch product: ${response.statusText}`);
+        }
+        const product = await response.json();
+        setCurrentProduct(product);
+        console.log(product);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchProduct();
+  }, [id]);
+
+  useEffect(() => {
+    if (currentProduct) {
+      setMainImage(currentProduct?.imageSrc?.[0] || "");
+    }
+  }, [currentProduct]);
+
+  useEffect(() => {
+    const handleResize = debounce(() => {
+      const width = window.innerWidth;
+      setIsMobile(width <= 390);
+      setIsTablet(width > 390 && width <= 850);
+    }, 300);
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  if (isLoading) return <div className="loading">Loading...</div>;
+  if (error) return <div className="error">Error: {error}</div>;
+  if (!currentProduct)
+    return <div className="no-product">Product not found.</div>;
 
   const toggleHowItWorks = () => {
     setHowItWorksVisible(!isHowItWorksVisible);
@@ -26,43 +82,6 @@ const SingleProduct = () => {
   const toggleLegalDisclaimer = () => {
     setLegalDisclaimerVisible(!isLegalDisclaimerVisible);
   };
-
-  useEffect(() => {
-    if (!sessionStorage.getItem("singleProductVisited")) {
-      sessionStorage.setItem("singleProductVisited", "true");
-      window.location.reload();
-    }
-  }, []);
-
-  if (
-    productIndex === undefined ||
-    productIndex < 0 ||
-    productIndex >= productData.length
-  ) {
-    return <div>Product not found</div>;
-  }
-
-  const currentProduct = productData[productIndex];
-
-  const [isPopupVisible, setIsPopupVisible] = useState(false);
-  const [inquiryRaised, setInquiryRaised] = useState(false);
-  const [focusedField, setFocusedField] = useState(null);
-  const [isTablet, setIsTablet] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-  const [mainImage, setMainImage] = useState(currentProduct?.imageSrc?.[0]);
-
-  useEffect(() => {
-    const handleResize = () => {
-      const width = window.innerWidth;
-      setIsMobile(width <= 390);
-      setIsTablet(width > 390 && width <= 850);
-    };
-
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   const handleInquiryClick = () => {
     setIsPopupVisible(true);
@@ -126,14 +145,7 @@ const SingleProduct = () => {
               </div>
             </div>
             {isTablet && (
-              <div className="upgrade-your-home">
-                Upgrade your home effortlessly with this 4-switch control kit.
-                Easily installed behind your existing switchboard, it requires
-                no additional wiring or wall damage. Control your appliances
-                like lights, fans, ACs, and coolers through your mobile phone,
-                remote, or voice commands via Alexa—all from the comfort of your
-                sofa or bed.
-              </div>
+              <div className="upgrade-your-home">{currentProduct.desc}</div>
             )}
           </div>
           <div className="SP-selected-product-info-container">
@@ -224,30 +236,18 @@ const SingleProduct = () => {
             <div className="selected-product-info-div">
               <div className="upgrade-your-home-effortlessly-parent">
                 {!isTablet && (
-                  <div className="upgrade-your-home">
-                    Upgrade your home effortlessly with this 4-switch control
-                    kit. Easily installed behind your existing switchboard, it
-                    requires no additional wiring or wall damage. Control your
-                    appliances like lights, fans, ACs, and coolers through your
-                    mobile phone, remote, or voice commands via Alexa—all from
-                    the comfort of your sofa or bed.
-                  </div>
+                  <div className="upgrade-your-home">{currentProduct.desc}</div>
                 )}
                 <div className="SP-SP-frame-parent1">
                   <div className="features-parent">
                     <div className="features">Features:</div>
                     <div className="no-extra-wiring-container">
                       <ul className="no-extra-wiring-or-wall-damage">
-                        <li className="no-extra-wiring">
-                          No extra wiring or wall damage
-                        </li>
-                        <li className="no-extra-wiring">
-                          Mobile, remote, and voice control (Alexa)
-                        </li>
-                        <li className="no-extra-wiring">
-                          Supports lights, fans, ACs, coolers, and more
-                        </li>
-                        <li>Installation support available via call</li>
+                        {currentProduct?.features?.map((feature, index) => (
+                          <li key={index} className="no-extra-wiring">
+                            {feature}
+                          </li>
+                        ))}
                       </ul>
                     </div>
                   </div>
@@ -255,10 +255,11 @@ const SingleProduct = () => {
                     <div className="features">Kit Includes:</div>
                     <div className="no-extra-wiring-container">
                       <ul className="no-extra-wiring-or-wall-damage">
-                        <li className="no-extra-wiring">
-                          Eco-4N Controller (60mm x 55mm x 21mm)
-                        </li>
-                        <li>User manual & warranty card</li>
+                        {currentProduct?.kitIncludes?.map((item, index) => (
+                          <li key={index} className="no-extra-wiring">
+                            {item}
+                          </li>
+                        ))}
                       </ul>
                     </div>
                   </div>
@@ -285,13 +286,7 @@ const SingleProduct = () => {
                   {isHowItWorksVisible && (
                     <div className="it-will-be-installed-behind-yo-wrapper">
                       <div className="SP-info-upgrade-your-home">
-                        It will be installed behind your existing switchboard,
-                        it doesn't require any additional wiring & physical
-                        damage of wall. It gives you power to control all your
-                        household appliances like Light, Fan, AC, Cooler, etc.,
-                        through your Mobile phone, Remote, and even with your
-                        voice via Alexa/Google Home, while seated on Sofa or
-                        Bed.
+                        {currentProduct.howItWorks}
                       </div>
                     </div>
                   )}
@@ -319,11 +314,7 @@ const SingleProduct = () => {
                   {isLegalDisclaimerVisible && (
                     <div className="it-will-be-installed-behind-yo-wrapper">
                       <div className="SP-info-upgrade-your-home">
-                        All product information is provided in good faith. Usage
-                        of this product should be in compliance with applicable
-                        laws and regulations. The company holds no
-                        responsibility for misuse or unintended usage of the
-                        product.
+                        {currentProduct.legalDisclaimer}
                       </div>
                     </div>
                   )}
