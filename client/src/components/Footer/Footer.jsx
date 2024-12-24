@@ -6,6 +6,7 @@ import linkedin from "../../assets/LandingPage/Footer/ri_linkedin-fill.svg";
 import instagram from "../../assets/LandingPage/Footer/Vector (1).svg";
 import facebook from "../../assets/LandingPage/Footer/Vector.svg";
 import twitter from "../../assets/LandingPage/Footer/Vector (2).svg";
+import debounce from "lodash.debounce";
 
 function Footer() {
   const [focusedField, setFocusedField] = useState(null);
@@ -27,9 +28,11 @@ function Footer() {
   };
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 390);
-    };
+    const handleResize = debounce(() => {
+      const width = window.innerWidth;
+      setIsMobile(width <= 390);
+    }, 300);
+
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);

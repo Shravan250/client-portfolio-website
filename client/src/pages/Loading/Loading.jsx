@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Loading.css"; // Add CSS for fade effects
+import "./Loading.css";
 import loadingScreen from "../../assets/loading.mp4";
 
 const Loading = ({ onLoadingComplete }) => {

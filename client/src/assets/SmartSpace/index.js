@@ -11,6 +11,8 @@ import brownBg from "./brownbackground.jpeg";
 import range from "./Range.svg";
 import sliderArrow from "./sliderArrow.svg";
 import smartSpaceImg from "./smartspacemainimg.png";
+import livingRoom from "./living room.png";
+import bangalow from "./bungalow.png";
 
 export {
   evening,
@@ -26,4 +28,6 @@ export {
   range,
   sliderArrow,
   smartSpaceImg,
+  livingRoom,
+  bangalow,
 };
