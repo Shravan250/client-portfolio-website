@@ -16,6 +16,8 @@ import Contact from "../pages/FooterPages/Contact/Contact";
 import AboutUs from "../pages/AboutUs/AboutUs";
 import SmartSpace from "../pages/SmartSpace/SmartSpace";
 import "./layout.css";
+import UploadCatalog from "../pages/Products/UploadCatalog";
+import ProductsCatalog from "../pages/Products/ProductsCatalog";
 import Products from "../pages/Products/Products";
 import SingleProduct from "../pages/SingleProduct/SingleProduct";
 import routes from "./routes.js";
@@ -38,7 +40,9 @@ const Layout = () => {
         <Routes key={location.pathname}>
           <Route path={routes.home} element={<LandingPage />} />
 
-          <Route path="/products" element={<Products />} />
+          <Route path="/upload" element={<UploadCatalog />} />
+          <Route path="/products" element={<ProductsCatalog />} />
+          {/* <Route path="/products" element={<Products />} /> */}
           <Route path="/products/:id" element={<SingleProduct />} />
 
           <Route path={routes.terms} element={<Terms_and_Conditions />} />
