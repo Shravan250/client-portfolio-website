@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Layout from "./layout/layout";
-import Loading from "./pages/Loading/loading";
+import Loading from "./pages/Loading/Loading";
 import PopUp from "./components/PopUp/PopUp";
 
 function App() {

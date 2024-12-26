@@ -15,6 +15,14 @@ const helmet = require("helmet");
 dotenv.config();
 connectDB();
 
+const __dirname = path.resolve();
+
+app.use(express.static(path.join(__dirname, "../client/build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/build", "index.html"));
+});
+
 const app = express();
 
 app.use(bodyParser.json());
