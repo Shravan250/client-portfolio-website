@@ -16,7 +16,7 @@ const PopUp = ({ onSubmit }) => {
     }
 
     try {
-      const response = await fetch(`${API_URL}api/contact/submit`, {
+      const response = await fetch(`${API_URL}/api/contact/submit`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, email, phone }),
