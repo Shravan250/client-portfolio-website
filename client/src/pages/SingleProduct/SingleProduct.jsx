@@ -35,7 +35,7 @@ const SingleProduct = () => {
       try {
         setIsLoading(true);
         const response = await fetch(
-          `http://localhost:5002/api/products/${id}`
+          `https://client-portfolio-website-nslfa0wnk-shravan250s-projects.vercel.app/api/products/${id}`
         );
         if (!response.ok) {
           throw new Error(`Failed to fetch product: ${response.statusText}`);

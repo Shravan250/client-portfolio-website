@@ -64,7 +64,7 @@ const Products = () => {
         category: activeTab,
       });
       const response = await fetch(
-        `http://localhost:5002/api/products?${params}`
+        `https://client-portfolio-website-nslfa0wnk-shravan250s-projects.vercel.app/api/products?${params}`
       );
       const data = await response.json();
       setProducts(data);

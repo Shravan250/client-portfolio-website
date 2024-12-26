@@ -14,9 +14,13 @@ const UploadCatalog = () => {
     formData.append("catalog", file);
 
     try {
-      await axios.post("http://localhost:5002/api/catalog/upload", formData, {
-        headers: { "Content-Type": "multipart/form-data" },
-      });
+      await axios.post(
+        "https://client-portfolio-website-nslfa0wnk-shravan250s-projects.vercel.app/api/catalog/upload",
+        formData,
+        {
+          headers: { "Content-Type": "multipart/form-data" },
+        }
+      );
       alert("Catalog uploaded successfully!");
     } catch (error) {
       console.error(error);
