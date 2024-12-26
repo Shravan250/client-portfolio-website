@@ -3,11 +3,12 @@ import axios from "axios";
 import "./ProductsCatalog.css";
 import catalogImage from "../../assets/ProductsCatalog/product catalogue.png";
 import downloadIcon from "../../assets/ProductsCatalog/Icon.png";
+import API_URL from "../../../config/config";
 
 const ProductsCatalog = () => {
   const handleDownload = async () => {
     try {
-      const response = await axios.get("/api/catalog/download", {
+      const response = await axios.get(`${API_URL}/api/catalog/download`, {
         responseType: "blob",
       });
       const url = window.URL.createObjectURL(new Blob([response.data]));
