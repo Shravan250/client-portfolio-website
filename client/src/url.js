@@ -1,1 +1,2 @@
-export const url = "http://localhost:5002";
+export const url =
+  "https://client-portfolio-website-nslfa0wnk-shravan250s-projects.vercel.app/";
