@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./UploadCatalog.css";
+import API_URL from "../../../config/config";
 
 const UploadCatalog = () => {
   const [file, setFile] = useState(null);
@@ -14,13 +15,9 @@ const UploadCatalog = () => {
     formData.append("catalog", file);
 
     try {
-      await axios.post(
-        "https://client-portfolio-website-nslfa0wnk-shravan250s-projects.vercel.app/api/catalog/upload",
-        formData,
-        {
-          headers: { "Content-Type": "multipart/form-data" },
-        }
-      );
+      await axios.post(`${API_URL}/api/catalog/upload`, formData, {
+        headers: { "Content-Type": "multipart/form-data" },
+      });
       alert("Catalog uploaded successfully!");
     } catch (error) {
       console.error(error);

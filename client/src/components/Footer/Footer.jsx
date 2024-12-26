@@ -7,6 +7,7 @@ import instagram from "../../assets/LandingPage/Footer/Vector (1).svg";
 import facebook from "../../assets/LandingPage/Footer/Vector.svg";
 import twitter from "../../assets/LandingPage/Footer/Vector (2).svg";
 import debounce from "lodash.debounce";
+import API_URL from "../../../config/config";
 
 function Footer() {
   const [focusedField, setFocusedField] = useState(null);
@@ -18,14 +19,11 @@ function Footer() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch(
-      "https://client-portfolio-website-nslfa0wnk-shravan250s-projects.vercel.app/api/contact/submit",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, email, message, phone }),
-      }
-    );
+    const response = await fetch(`${API_URL}/api/contact/submit`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ username, email, message, phone }),
+    });
     const result = await response.json();
     alert(result.message);
   };

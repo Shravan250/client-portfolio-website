@@ -13,6 +13,7 @@ import {
 } from "../../assets/SingleProduct/index";
 import productData from "../../../ProductData/productData";
 import { useLocation, useParams } from "react-router-dom";
+import API_URL from "../../../config/config";
 
 const SingleProduct = () => {
   const location = useLocation();
@@ -34,9 +35,7 @@ const SingleProduct = () => {
     const fetchProduct = async () => {
       try {
         setIsLoading(true);
-        const response = await fetch(
-          `https://client-portfolio-website-nslfa0wnk-shravan250s-projects.vercel.app/api/products/${id}`
-        );
+        const response = await fetch(`${API_URL}/api/products/${id}`);
         if (!response.ok) {
           throw new Error(`Failed to fetch product: ${response.statusText}`);
         }

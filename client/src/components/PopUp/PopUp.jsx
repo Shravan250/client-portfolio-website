@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import icon from "../../assets/PopUp/Package details.png";
 import "./PopUp.css";
+import API_URL from "../../../config/config";
 const PopUp = ({ onSubmit }) => {
   const [focusedField, setFocusedField] = useState(null);
   const [username, setUsername] = useState("");
@@ -15,14 +16,11 @@ const PopUp = ({ onSubmit }) => {
     }
 
     try {
-      const response = await fetch(
-        "https://client-portfolio-website-nslfa0wnk-shravan250s-projects.vercel.app/api/contact/submit",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ username, email, phone }),
-        }
-      );
+      const response = await fetch(`${API_URL}api/contact/submit`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, email, phone }),
+      });
 
       const result = await response.json();
       alert(result.message);

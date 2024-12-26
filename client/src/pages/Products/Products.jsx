@@ -4,7 +4,7 @@ import debounce from "lodash.debounce";
 import filter from "../../assets/Products/Filter.svg";
 import sort from "../../assets/Products/Sort.svg";
 import { useNavigate } from "react-router-dom";
-
+import API_URL from "../../../config/config";
 const ProductCard = ({
   name,
   originalPrice,
@@ -63,9 +63,7 @@ const Products = () => {
       const params = new URLSearchParams({
         category: activeTab,
       });
-      const response = await fetch(
-        `https://client-portfolio-website-nslfa0wnk-shravan250s-projects.vercel.app/api/products?${params}`
-      );
+      const response = await fetch(`${API_URL}/api/products?${params}`);
       const data = await response.json();
       setProducts(data);
     } catch (error) {
