@@ -4,35 +4,35 @@ p {
 
 .our-solutions {
   font-family: Metal;
-  font-size: 1.875rem; /* 30px */
+  font-size: 1.875rem;
   font-weight: 400;
-  line-height: 2.15625rem; /* 34.5px */
+  line-height: 2.15625rem;
   text-align: center;
 }
 
 .elevate-your-home {
   font-family: Matter-Semibold;
-  font-size: 3.875rem; /* 62px */
+  font-size: 3.875rem;
   font-weight: 600;
-  line-height: 4.4375rem; /* 71.3px */
+  line-height: 4.4375rem;
   text-align: center;
   color: #000000;
 }
 
 .our-solutions-parent {
-  width: 48.5625rem; /* 777px */
-  height: 12.0625rem; /* 193px */
+  width: 48.5625rem;
+  height: 12.0625rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 1.0625rem; /* 17px */
+  gap: 1.0625rem;
 }
 
 .modular-design-means {
   font-weight: 500;
-  width: 21.9375rem; /* 351px */
-  line-height: 2.265rem; /* 36.3px */
+  width: 21.9375rem;
+  line-height: 2.265rem;
   display: inline-block;
   flex-shrink: 0;
   font-family: Matter;
@@ -46,7 +46,7 @@ p {
 
 .points-oem-container .points {
   margin-block-start: 0;
-  margin-block-end: 0.5rem; /* 8px */
+  margin-block-end: 0.5rem;
   margin: 0;
 }
 
@@ -55,36 +55,36 @@ p {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  font-size: 0.875rem; /* 14px */
-  line-height: 1.42857; /* 20px */
+  font-size: 0.875rem;
+  line-height: 1.42857;
   color: #656565;
 }
 
 .title-modular-design-parent {
-  width: 12.625rem; /* 202px */
+  width: 12.625rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1.0625rem; /* 17px */
+  gap: 1.0625rem;
 }
 
 .hardware-design-parent {
-  width: 12.4375rem; /* 199px */
+  width: 12.4375rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1.0625rem; /* 17px */
+  gap: 1.0625rem;
 }
 
 .embedded-software-parent {
-  width: 14.3125rem; /* 229px */
+  width: 14.3125rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1.0625rem; /* 17px */
+  gap: 1.0625rem;
 }
 
 .three-modular-design {
@@ -92,10 +92,10 @@ p {
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 4.0625rem; /* 65px */
-  font-size: 1.25rem; /* 20px */
+  gap: 4.0625rem;
+  font-size: 1.25rem;
   font-weight: 500;
-  line-height: 1.4375rem; /* 23px */
+  line-height: 1.4375rem;
   text-align: left;
   font-family: Matter-Medium;
 }
@@ -106,129 +106,128 @@ p {
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 10.3125rem; /* 165px */
+  gap: 10.3125rem;
   text-align: left;
   color: #1d1d1d;
   font-family: Matter;
 }
 
 .solutions-container {
-  height: 32.9375rem; /* 527px */
-  gap: 11.875rem; /* 190px */
-
+  height: 32.9375rem;
+  gap: 11.875rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
   text-align: center;
-  font-size: 1.875rem; /* 30px */
+  font-size: 1.875rem;
   color: #383838;
   font-family: Metal;
 }
 
 @media (max-width: 850px) {
   .solutions-container {
-    height: 24.6875rem; /* 395px */
-    gap: 9.4375rem; /* 151px */
+    height: 24.6875rem;
+    gap: 9.4375rem;
   }
   .our-solutions-parent {
-    width: 25.0625rem; /* 401px */
-    height: 7.625rem; /* 122px */
-    gap: 1.062 5rem; /* 17px */
+    width: 25.0625rem;
+    height: 7.625rem;
+    gap: 1.062 5rem;
   }
   .our-solutions {
     font-family: Metal;
-    font-size: 1.25rem; /* 20px */
+    font-size: 1.25rem;
     font-weight: 400;
-    line-height: 1.4375rem; /* 23px */
+    line-height: 1.4375rem;
     text-align: center;
   }
   .elevate-your-home {
-    font-size: 2.25rem; /* 36px */
+    font-size: 2.25rem;
     font-weight: 600;
-    line-height: 2.5875rem; /* 41.4px */
+    line-height: 2.5875rem;
     text-align: center;
   }
   .modular-design-means-easy-part-parent {
-    width: 45.9375rem; /* 735px */
-    height: 7.625rem; /* 122px */
-    gap: 3.75rem; /* 60px */
+    width: 45.9375rem;
+    height: 7.625rem;
+    gap: 3.75rem;
   }
   .modular-design-means {
     font-family: Matter;
-    font-size: 1rem; /* 16px */
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 1.209rem; /* 19.36px */
+    line-height: 1.209rem;
     text-align: left;
-    width: 10.8125rem; /* 173px */
-    height: 4.75rem; /* 76px */
+    width: 10.8125rem;
+    height: 4.75rem;
     gap: 0;
   }
   .span-90 {
     font-family: Matter;
-    font-size: 1rem; /* 16px */
+    font-size: 1rem;
     font-weight: 600;
-    line-height: 1.209rem; /* 19.36px */
+    line-height: 1.209rem;
     text-align: left;
   }
   .three-modular-design {
-    width: 31.125rem; /* 502px */
-    height: 7.625rem; /* 122px */
-    gap: 2.4375rem; /* 39px */
+    width: 31.125rem;
+    height: 7.625rem;
+    gap: 2.4375rem;
   }
   .title-modular-design {
     font-family: Matter-Medium;
-    font-size: 0.8125rem; /* 13px */
+    font-size: 0.8125rem;
     font-weight: 500;
-    line-height: 0.934375rem; /* 14.95px */
+    line-height: 0.934375rem;
     text-align: left;
   }
 
   .points-oem-container {
     font-family: Matter;
-    font-size: 0.75rem; /* 12px */
+    font-size: 0.75rem;
     font-weight: 400;
-    line-height: 0.74375rem; /* 11.88px */
+    line-height: 0.74375rem;
     text-align: left;
-    gap: 0.5rem; /* 8px */
+    gap: 0.5rem;
   }
   .title-modular-design-parent {
-    width: 9.4375rem; /* 151px */
-    height: 6.375rem; /* 102px */
-    gap: 0.9375rem; /* 15px */
+    width: 9.4375rem;
+    height: 6.375rem;
+    gap: 0.9375rem;
   }
   .hardware-design-parent {
-    width: 9.375rem; /* 150px */
-    height: 7.625rem; /* 122px */
-    gap: 0.9375rem; /* 15px */
+    width: 9.375rem;
+    height: 7.625rem;
+    gap: 0.9375rem;
   }
   .embedded-software-parent {
-    width: 7.6875rem; /* 123px */
-    height: 3.375rem; /* 54px */
-    gap: 0.9375rem; /* 15px */
+    width: 7.6875rem;
+    height: 3.375rem;
+    gap: 0.9375rem;
   }
 }
 
 @media (max-width: 450px) {
   .solutions-container {
-    height: 32.9375rem; /* 527px */
-    gap: 3.875rem; /* 62px */
+    height: 32.9375rem;
+    gap: 3.875rem;
   }
   .our-solutions-parent {
-    width: 17.1875rem; /* 275px */
-    gap: 1.0625rem; /* 17px */
+    width: 17.1875rem;
+    gap: 1.0625rem;
   }
   .our-solutions {
-    font-size: 0.875rem; /* 14px */
+    font-size: 0.875rem;
     font-weight: 400;
-    line-height: 1rem; /* 16.1px */
+    line-height: 1rem;
     text-align: center;
   }
   .elevate-your-home {
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.5rem;
     font-weight: 600;
-    line-height: 1.725rem; /* 27.6px */
+    line-height: 1.725rem;
     text-align: center;
   }
   .modular-design-means-easy-part-parent {
@@ -236,32 +235,32 @@ p {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 22.1875rem; /* 355px */
-    height: 23.0625rem; /* 369px */
-    min-width: 22.1875rem; /* 355px */
-    gap: 3.75rem; /* 60px */
+    width: 22.1875rem;
+    height: 23.0625rem;
+    min-width: 22.1875rem;
+    gap: 3.75rem;
   }
   .modular-design-means {
-    width: 22.1875rem; /* 355px */
-    height: 2.375rem; /* 38px */
+    width: 22.1875rem;
+    height: 2.375rem;
   }
   .three-modular-design {
-    width: 22.1875rem; /* 355px */
-    height: 16.9375rem; /* 271px */
+    width: 22.1875rem;
+    height: 16.9375rem;
   }
   .points-oem-container {
-    gap: 0.9375rem; /* 15px */
+    gap: 0.9375rem;
   }
   .points {
-    font-size: 0.875rem; /* 14px */
+    font-size: 0.875rem;
     font-weight: 400;
-    line-height: 1.09375rem; /* 17.5px */
+    line-height: 1.09375rem;
     text-align: left;
   }
   .title-modular-design {
-    font-size: 1rem; /* 16px */
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 1.15rem; /* 18.4px */
+    line-height: 1.15rem;
     text-align: left;
   }
 }

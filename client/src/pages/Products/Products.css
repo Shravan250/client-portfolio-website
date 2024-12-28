@@ -58,7 +58,7 @@
 .card-container {
   width: 1392px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-columns: repeat(4, 1fr);
   gap: 18px;
 }
 
