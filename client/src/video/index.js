@@ -9,7 +9,7 @@ import TV from "./TV-again-ae-ac.mp4";
 import outdoorDayToNight from "./outdoor-animation day to night.mp4";
 import outdoorNightToDay from "./outdoor-animation night to day.mp4";
 import outdoorLight from "./outdoor-changing lights.mp4";
-import loadingScreen from "./loading.mp4";
+import loadingScreen from "./EffortlessAutomation-loading.gif";
 
 export {
   dayToEvening,
