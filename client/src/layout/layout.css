@@ -2,8 +2,6 @@ html,
 body {
   margin: 0;
   line-height: normal;
-  max-width: 1512px;
-  min-width: 390px;
   overflow-x: hidden;
 }
 
@@ -23,7 +21,7 @@ body {
 }
 
 .div {
-  width: 1512px;
+  width: 100%;
   min-height: 100vh;
   min-width: 390px;
   background-color: #fbfbfb;
@@ -73,7 +71,7 @@ footer {
 
 @media (max-width: 850px) {
   .div {
-    width: 850px;
+    width: 100%;
   }
   .main-content {
     padding-top: 50px;
@@ -82,7 +80,7 @@ footer {
 
 @media (max-width: 390px) {
   .div {
-    width: 390px;
+    width: 100%;
   }
   .main-content {
     padding-top: 20px;

@@ -21,6 +21,10 @@ body {
   font-family: "Matter", sans-serif;
 }
 
+#root {
+  width: 100%;
+}
+
 @media (max-width: 850px) {
 }
 

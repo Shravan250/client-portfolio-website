@@ -109,7 +109,6 @@ p {
 }
 
 .solutions-container {
-  width: 1276px;
   height: 527px;
   gap: 190px;
   opacity: 0px;
@@ -127,7 +126,6 @@ p {
 
 @media (max-width: 850px) {
   .solutions-container {
-    width: 735px;
     height: 395px;
     gap: 151px;
     opacity: 0px;
@@ -219,7 +217,6 @@ p {
 
 @media (max-width: 390px) {
   .solutions-container {
-    width: 735px;
     height: 527px;
     gap: 62px;
   }

@@ -57,6 +57,7 @@
   align-items: center;
   position: absolute;
   top: -15%;
+  width: 100%;
 }
 
 .LandingImage-left {
@@ -64,6 +65,12 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+
+.LandingImage-left img {
+  width: 100%;
+  height: auto;
 }
 
 .show-top-text .LandingImage {
@@ -296,8 +303,7 @@
     transition: transform 1s ease, opacity 1s ease;
   }
 
-  .image {
-    width: 440px;
+  .LandingImage-left img {
     height: 480px;
   }
 
