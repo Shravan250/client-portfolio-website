@@ -7,7 +7,7 @@
 }
 
 .fade-in {
-  opacity: 0;
+   
   transform: translateY(1.25rem); /* 20px */
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
@@ -18,7 +18,7 @@
 }
 
 .slide-in-left {
-  opacity: 0;
+   
   transform: translateX(-6.25rem); /* -100px */
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
@@ -29,7 +29,7 @@
 }
 
 .slide-in-right {
-  opacity: 0;
+   
   transform: translateX(6.25rem); /* 100px */
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
@@ -86,11 +86,11 @@
 }
 
 .remove-image .LandingImage {
-  opacity: 0;
+   
 }
 
 .main-content-landing-page {
-  opacity: 0;
+   
   transform: translateY(1.25rem); /* 20px */
   transition: opacity 1s ease, transform 1s ease;
   display: flex;
@@ -120,7 +120,7 @@
 .top-text,
 .right-text {
   position: absolute;
-  opacity: 0;
+   
   transition: transform 0.5s ease;
 }
 
@@ -131,7 +131,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  opacity: 0;
+   
 }
 
 .top-text-1 {
@@ -161,7 +161,7 @@
   display: flex;
   flex-direction: column;
   width: 500px;
-  opacity: 0;
+   
 }
 
 .right-text-1 {
@@ -185,12 +185,12 @@
 
 .top-text,
 .right-text {
-  opacity: 0;
+   
   animation: fadeInLandingImage 2s ease forwards;
 }
 
 .LandingImage.hidden {
-  opacity: 0;
+   
   transform: translateY(-100%);
   pointer ```css
   -events: none;
@@ -210,7 +210,7 @@
 
 @keyframes fadeInLandingImage {
   from {
-    opacity: 0;
+     
     transform: translateY(1.25rem); /* 20px */
   }
   to {
@@ -272,7 +272,7 @@
     display: flex;
     flex-direction: column;
     width: 15.625rem; /* 250px */
-    opacity: 0;
+     
   }
 
   .right-text-1 {
@@ -358,7 +358,7 @@
 /* 319px */
     height: 8.875rem; /* 143px */
     gap: 0.875rem; /* 14px */
-    opacity: 0;
+     
   }
 
   .right-text-1 {
