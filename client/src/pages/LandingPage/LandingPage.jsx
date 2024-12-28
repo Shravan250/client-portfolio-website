@@ -77,11 +77,14 @@ const LandingPage = () => {
     ${scrollPhase === 4 ? "return-to-center" : ""}
     ${scrollPhase === 5 ? "remove-image show-content" : ""}`}
     >
-      <section className="LandingImage">
+      <section
+        className={`LandingImage ${scrollPhase === 5 ? "hidden" : ""}`}
+        style={{ display: scrollPhase === 5 ? "none" : "flex" }}
+      >
         <div className="LandingImage-top">
-          <img className="arrow-down" src={arrowDown} />
+          <img className="arrow-down" src={arrowDown} alt="Arrow Down" />
           <div className="LandingImage-left">
-            <img className="image" alt="" src={image} />
+            <img className="image" alt="Hero" src={image} />
           </div>
         </div>
       </section>

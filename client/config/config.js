@@ -1,3 +1,3 @@
-const API_URL = "https://client-portfolio-website-backend.onrender.com";
+const API_URL = "http://localhost:5002";
 
 export default API_URL;
