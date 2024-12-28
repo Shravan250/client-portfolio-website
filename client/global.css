@@ -20,3 +20,9 @@ body {
   padding: 0;
   font-family: "Matter", sans-serif;
 }
+
+@media (max-width: 850px) {
+}
+
+@media (max-width: 390px) {
+}
