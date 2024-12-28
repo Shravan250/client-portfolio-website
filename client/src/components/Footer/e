@@ -508,7 +508,7 @@
 
 @media (max-width: 450px) {
   .footer {
-    width: 27.375rem; /* 450px */
+    width: 24.375rem; /* 390px */
     height: 27.6875rem; /* 443px */
     gap: 2.063rem; /* 33.02px */
   }
@@ -654,115 +654,5 @@
     width: 22.375rem; /* 358px */
     display: flex;
     justify-content: flex-end;
-  }
-  .mv-feedback-parent {
-    width: 358px;
-    height: 411.19px;
-    padding: 8.25px 0px 8.25px 0px;
-    gap: 40px;
-    opacity: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .mv-footer-main {
-    width: 358px;
-    gap: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .mv-top-section {
-    width: 358px;
-    height: 69.21px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    opacity: 0px;
-  }
-  .mv-section {
-    width: 101px;
-    height: 69.21px;
-    gap: 8.62px;
-    opacity: 0px;
-    display: flex;
-    flex-direction: column;
-  }
-  .mv-section-bottom {
-    width: 130px;
-    height: 100.8px;
-    gap: 11px;
-    opacity: 0px;
-    display: flex;
-    flex-direction: column;
-  }
-  .mv-eabrown-trademark-logo-on-whit {
-    width: 100px;
-    height: 40px;
-  }
-  .mv-footer-contact-us {
-    font-family: Matter;
-    font-size: 11px;
-    font-weight: 500;
-    line-height: 15.4px;
-    letter-spacing: 0.04em;
-    text-align: left;
-    text-transform: uppercase;
-  }
-  .mv-footer-list-item {
-    font-family: Matter;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 14px;
-    text-align: left;
-    color: #252525;
-  }
-  .mv-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.8px;
-  }
-  .mv-bottom-section {
-    width: 358px;
-    height: 69.21px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    opacity: 0px;
-  }
-  .mv-feedback {
-    border-radius: 16px;
-    background-color: #fbfbfb;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 200px;
-    height: 157.4px;
-    padding: 15px 10px 15px 10px;
-    gap: 16px;
-    border-radius: 5.48px;
-    opacity: 0px;
-  }
-  .mv-seeking-personalized-support-container {
-    font-family: Matter;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 18.2px;
-    letter-spacing: -0.02em;
-    text-align: left;
-    color: #25252566;
-  }
-
-  .mv-bottom {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    text-align: right;
-    color: #252525;
-    gap: 10px;
   }
 }

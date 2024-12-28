@@ -15,7 +15,7 @@ function Footer() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [phone, setPhone] = useState("");
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 390);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 450);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -31,7 +31,7 @@ function Footer() {
   useEffect(() => {
     const handleResize = debounce(() => {
       const width = window.innerWidth;
-      setIsMobile(width <= 390);
+      setIsMobile(width <= 450);
     }, 300);
 
     window.addEventListener("resize", handleResize);
