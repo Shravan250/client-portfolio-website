@@ -1,3 +1,3 @@
-const API_URL = "https://loaclhost:5002";
+const API_URL = "https://client-portfolio-website-backend.onrender.com";
 
 export default API_URL;
