@@ -37,7 +37,7 @@ const ProductCard = ({
 
 const Products = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 390);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 450);
   const [activeTab, setActiveTab] = useState("Retrofit Switches");
   const [isFilterHovered, setFilterIsHovered] = useState(false);
   const [isSortHovered, setSortIsHovered] = useState(false);

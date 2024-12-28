@@ -1,19 +1,7 @@
-/* Keyframes for fade-out
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-}
-
 /* Keyframes for fade-in */
 @keyframes fadeIn {
   from {
-    opacity: 0;
+     
     transform: translateY(20px);
   }
   to {
@@ -21,10 +9,11 @@
     transform: translateY(0);
   }
 }
+
 /* Keyframes for slide-in */
 @keyframes slideIn {
   from {
-    opacity: 0;
+     
     transform: translateY(100px);
   }
   to {
@@ -35,7 +24,7 @@
 
 /* Initial hidden state */
 .hidden {
-  opacity: 0;
+   
   transform: translateY(100px);
 }
 
@@ -53,7 +42,8 @@
 }
 
 .about-us-landing {
-  width: 1512px;
+  width: 100%;
+  max-width: 94.5rem; /* 1512px */
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -61,7 +51,7 @@
   justify-content: center;
   position: absolute;
   z-index: 10;
-  top: 90px;
+  top: 5rem; /* 90px */
   left: 0;
   background-color: white;
   transition: opacity 0.5s ease;
@@ -76,84 +66,91 @@
 .iot {
   color: #1c6bff;
 }
+
 .AboutUs-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 100px;
-  width: 1512px;
+  gap: 6.25rem; /* 100px */
+  width: 100%;
+  max-width: 94.5rem; /* 1512px */
 }
 
 .about-us-heading {
   font-family: Matter;
-  font-size: 40px;
+  font-size: 2.5rem; /* 40px */
   font-weight: 400;
-  line-height: 51.45px;
-
-  width: 1239px;
-  height: 153px;
+  line-height: 3.21875rem; /* 51.45px */
+  width: 77.4375rem; /* 1239px */
+  height: 9.5625rem; /* 153px */
 }
 
 .smart-home-icon {
-  width: 390px;
-  height: 390px;
+  width: 24.375rem; /* 390px */
+  height: 24.375rem; /* 390px */
   object-fit: cover;
 }
 
 .our-mission {
   font-family: Metal;
-  font-size: 30px;
+  font-size: 1.875rem; /* 30px */
   font-weight: 400;
-  line-height: 34.5px;
+  line-height: 2.15625rem; /* 34.5px */
   text-align: center;
   color: #383838;
 }
+
 .driving-the-future {
   font-family: Matter-Semibold;
-  font-size: 62px;
+  font-size: 3.875rem; /* 62px */
   font-weight: 600;
-  line-height: 71.3px;
+  line-height: 4.4375rem; /* 71.3px */
   text-align: center;
   color: #000000;
 }
+
 .our-mission-parent {
-  width: 777px;
-  height: 193px;
+  width: 48.5625rem; /* 777px */
+  height: 12.0625rem; /* 193px */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 17px;
+  gap: 1.0625rem; /* 17px */
 }
+
 .main-content-p {
   align-self: stretch;
   color: #656565;
   font-family: Matter;
-  font-size: 15px;
+  font-size: 0.9375rem; /* 15px */
   font-weight: 400;
-  line-height: 16.8px;
+  line-height: 1.05rem; /* 16.8px */
   text-align: left;
 }
+
 .main-content-p-3 {
   align-self: stretch;
   color: #656565;
   font-family: Matter;
-  font-size: 15px;
+  font-size: 0.9375rem; /* 15px */
   font-weight: 400;
-  line-height: 16.8px;
+  line-height: 1.05rem; /* 16.8px */
   text-align: left;
-  width: 287.5px;
-  height: 51px;
+  width: 17.875rem; /* 287.5px */
+  height: 3.1875rem; /* 51px */
 }
+
 .main-content-heading {
   align-self: stretch;
   position: relative;
-  font-size: 28px;
+  font-size: 1.75rem; /* 28px */
   line-height: 115%;
   font-weight: 500;
   color: #383838;
   font-family: Matter-Medium;
+ ```css
 }
 
 .mission-content-container {
@@ -164,9 +161,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px 20px 30px 20px;
-  gap: 40px;
-  width: 347.5px;
+  padding: 1.875rem 1.25rem; /* 30px 20px */
+  gap: 2.5rem; /* 40px */
+  width: 21.6875rem; /* 347.5px */
 }
 
 .mission-content-container-1 {
@@ -176,9 +173,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 30px;
-  width: 287.5px;
-  height: 111px;
+  gap: 1.875rem; /* 30px */
+  width: 17.875rem; /* 287.5px */
+  height: 6.9375rem; /* 111px */
 }
 
 .no-border {
@@ -192,93 +189,97 @@
   align-items: flex-start;
   justify-content: flex-start;
   text-align: left;
-  font-size: 14px;
+  font-size: 0.875rem; /* 14px */
   color: #656565;
   font-family: Matter;
-  width: 1390px;
-  height: 262px;
+  width: 86.25rem; /* 1390px */
+  height: 16.375rem; /* 262px */
 }
+
 .aboutus-mission {
-  width: 1510px;
-  height: 982px;
+  width: 94.375rem; /* 1510px */
+  height: 61.125rem; /* 982px */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0px 60px;
+  padding: 0 3.75rem; /* 0px 60px */
   box-sizing: border-box;
-  gap: 160px;
-  font-size: 30px;
+  gap: 10rem; /* 160px */
+  font-size: 1.875rem; /* 30px */
   color: #383838;
   font-family: Metal;
 }
+
 .join-us {
   align-self: stretch;
   line-height: 115%;
   font-weight: 600;
-  width: 1052px;
-  height: 71px;
+  width: 65.625rem; /* 1052px */
+  height: 4.4375rem; /* 71px */
   font-family: Matter-Semibold;
-  font-size: 62px;
-  font-weight: 600;
-  line-height: 71.3px;
+  font-size: 3.875rem; /* 62px */
   text-align: center;
 }
+
 .be-a-part {
   align-self: stretch;
-  font-size: 24px;
+  font-size: 1.5rem; /* 24px */
   color: #656565;
-  width: 1052px;
-  height: 58px;
+  width: 65.625rem; /* 1052px */
+  height: 3.625rem; /* 58px */
   font-family: Matter;
   font-weight: 400;
-  line-height: 28.8px;
+  line-height: 1.8rem; /* 28.8px */
   text-align: center;
 }
+
 .join-us-parent {
   align-self: stretch;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 40px;
-  width: 1052px;
-  height: 169px;
+  gap: 2.5rem; /* 40px */
+  width: 65.625rem; /* 1052px */
+  height: 10.5625rem; /* 169px */
 }
 
 .AU-contact {
-  height: 23px;
+  height: 1.4375rem; /* 23px */
   font-weight: 500;
   font-family: Matter;
-  font-size: 18.78px;
-  line-height: 22.53px;
-
+  font-size: 1.17125rem; /* 18.78px */
+  line-height: 1.40625rem; /* 22.53px */
   text-align: center;
   color: #f7f7f7;
 }
+
 .AU-contact-us {
-  width: 142px;
+  width: 8.875rem; /* 142px */
   position: relative;
-  border-radius: 58.68px;
-  height: 55.2px;
+  border-radius: 3.66875rem; /* 58.68px */
+  height: 3.45rem; /* 55.2px */
   overflow: hidden;
   flex-shrink: 0;
-  font-size: 18.78px;
+  font-size: 1.17125rem; /* 18.78px */
   background-color: #1c6bff;
 }
+
 .AU-contact-us:hover,
 .AU-contact-us:focus {
   outline: none;
 }
+
 .join-us-container {
-  width: 1052px;
+  width: 65.625rem; /* 1052px */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  gap: 50px;
-  font-size: 62px;
+  gap: 3.125rem; /* 50px */
+  font-size: 3.875rem; /* 62px */
   color: #000;
 }
 
@@ -286,248 +287,254 @@ p {
   margin: 0;
 }
 
-@media (max-width: 850px) {
+@media ( max-width: 850px) {
   .AboutUs-container {
-    gap: 200px;
+    gap: 12.5rem; /* 200px */
   }
   .about-us-heading {
-    width: 754px;
-    height: 164px;
+    width: 47.25rem; /* 754px */
+    height: 10.25rem; /* 164px */
     font-family: Matter;
-    font-size: 32px;
+    font-size: 2rem; /* 32px */
     font-weight: 400;
-    line-height: 41.16px;
+    line-height: 2.578125rem; /* 41.16px */
     text-align: center;
   }
   .iot {
     font-family: Matter;
-    font-size: 32px;
+    font-size: 2rem; /* 32px */
     font-weight: 400;
-    line-height: 41.16px;
+    line-height: 2.578125rem; /* 41.16px */
     text-align: center;
   }
   .smart-home-icon {
-    width: 341px;
-    height: 341px;
+    width: 21.25rem; /* 341px */
+    height: 21.25rem; /* 341px */
   }
   .aboutus-mission {
-    width: 834px;
-    height: 567.36px;
-    padding: 0px 33.14px 0px 33.14px;
-    gap: 88.37px;
+    width: 52.5rem; /* 834px */
+    height: 35.5rem; /* 567.36px */
+    padding: 0 2.07rem; /* 0px 33.14px */
+    gap: 5.5rem; /* 88.37px */
   }
   .our-mission-parent {
-    width: 429.15px;
-    height: 114.39px;
-    gap: 9.39px;
+    width: 26.75rem; /* 429.15px */
+    height: 7.125rem; /* 114.39px */
+    gap: 0.585rem; /* 9.39px */
   }
   .our-mission {
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
     font-weight: 400;
-    line-height: 23px;
+    line-height: 1.4375rem; /* 23px */
     text-align: center;
   }
   .driving-the-future {
-    font-size: 36px;
+    font-size: 2.25rem; /* 36px */
     font-weight: 600;
-    line-height: 41.4px;
+    line-height: 2.5875rem; /* 41.4px */
     text-align: center;
   }
   .about-us-flex-wrap {
-    width: 700px;
-    height: 341.6px;
-    gap: 40px;
+    width: 43.75rem; /* 700px */
+    height: 21.25rem; /* 341.6px */
+    gap: 2.5rem; /* 40px */
     display: flex;
   }
   .mission-content {
-    width: 700px;
-    height: 341.6px;
-    gap: 40px;
+    width: 43.75rem; /* 700px */
+    height: 21.25rem; /* 341.6px */
+    gap: 2.5rem; /* 40px */
   }
   .mission-content-container {
-    width: 350px;
-    height: 150.8px;
-    gap: 22.09px;
+    width: 21.875rem; /* 350px */
+    height: 9.425rem; /* 150.8px */
+    gap: 1.375rem; /* 22.09px */
   }
   .mission-content-container-1 {
-    width: 290px;
-    height: 53.57px;
-    gap: 16.57px;
-    opacity: 0px;
+    width: 18.125rem; /* 290px */
+    height: 3.35rem; /* 53.57px */
+    gap: 1rem; /* 16.57px */
+     
   }
   .main-content-p {
-    font-size: 12px;
+    font-size: 0.75rem; /* 12px */
     font-weight: 400;
-    line-height: 14.4px;
+    line-height: 0.9rem; /* 14.4px */
     text-align: left;
   }
   .main-content-heading {
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
     font-weight: 500;
-    line-height: 23px;
+    line-height: 1.4375rem; /* 23px */
     text-align: left;
   }
   .main-content-p-3 {
-    font-size: 12px;
+    font-size: 0.75rem; /* 12px */
     font-weight: 400;
-    line-height: 14.4px;
+    line-height: 0.9rem; /* 14.4px */
     text-align: left;
   }
   .join-us-container {
-    width: 754px;
-    height: 180.37px;
-    gap: 35.84px;
-    opacity: 0px;
+    width: 47.25rem; /* 754px */
+    height: 11.25rem; /* 180.37px */
+    gap: 2.25rem; /* 35.84px */
+     
   }
   .join-us-parent {
-    width: 754px;
-    height: 107.67px;
-    gap: 28.67px;
+    width: 47.25rem; /* 754px */
+    height: 6.75rem; /* 107.67px */
+    gap: 1.75rem; /* 28.67px */
   }
   .join-us {
-    font-size: 36px;
+    font-size: 2.25rem; /* 36px */
     font-weight: 600;
-    line-height: 41.4px;
+    line-height: 2.5875rem; /* 41.4px */
     text-align: center;
-    width: 754px;
-    height: 41px;
+    width: 47.25rem; /* 754px */
+    height: 2.5625rem; /* 41px */
   }
   .be-a-part {
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     font-weight: 400;
-    line-height: 19.2px;
+    line-height: 1.2rem; /* 19.2px */
     text-align: center;
-    width: 754px;
-    height: 38px;
+    width: 47.25rem; /* 754px */
+    height: 2.375rem; /* 38px */
   }
   .AU-contact-us {
-    width: 94.91px;
-    height: 36.86px;
-    gap: 0px;
-    border-radius: 39.22px;
+    width: 5.90625rem; /* 94.91px */
+    height: 2.29625rem; /* 36.86px */
+    gap: 0;
+    border-radius: 1.22625rem; /* 39.22px */
   }
   .AU-contact {
-    font-size: 12px;
+    font-size: 0.75rem; /* 12px */
     font-weight: 500;
-    line-height: 14.4px;
+    line-height: 0.9rem; /* 14.4px */
     text-align: center;
-    width: 45px;
-    height: 14px;
+    width: 2.8125rem; /* 45px */
+    height: 0.875rem; /* 14px */
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 450px) {
   .AboutUs-container {
-    gap: 100px;
+    gap: 6.25rem; /* 100px */
   }
   .about-us-heading {
-    width: 348px;
-    height: 168px;
-    font-size: 20px;
+    width: 21.75rem; /* 348px */
+    height: 10.5rem; /* 168px */
+    font-size: 1.25rem; /* 20px */
     font-weight: 400;
-    line-height: 27.78px;
+    line-height: 1.73375rem; /* 27.78px */
     text-align: center;
   }
   .iot {
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
     font-weight: 400;
-    line-height: 27.78px;
+    line-height: 1.73375rem; /* 27.78px */
     text-align: center;
   }
   .smart-home-icon {
-    width: 272px;
-    height: 272px;
+    width: 17rem; /* 272px */
+    height: 17rem; /* 272px */
   }
   .aboutus-mission {
-    width: 358px;
-    height: 590.09px;
-    gap: 52px;
-    padding: 0 10px;
+    width: 22.375rem; /* 358px */
+    height: 36.75rem; /* 590.09px */
+    gap: 3.25rem; /* 52px */
+    padding: 0 0.625rem; /* 0 10px */
   }
   .our-mission-parent {
-    width: 275px;
-    height: 91px;
-    gap: 17px;
+    width: 17.1875rem; /* 275px */
+    height: 5.6875rem; /* 91px */
+    gap: 1.0625rem; /* 17px */
   }
   .our-mission {
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
     font-weight: 400;
-    line-height: 18.4px;
+    line-height: 1.15rem; /* 18.4px */
     text-align: center;
   }
+  .about-us-flex-wrap {
+    flex-direction: column;
+    gap: 0px;
+  }
+
   .driving-the-future {
-    font-size: 24px;
+    font-size: 1.5rem; /* 24px */
     font-weight: 600;
-    line-height: 27.6px;
+    line-height: 1.725rem; /* 27.6px */
     text-align: center;
   }
   .mission-content {
-    width: 358px;
-    height: 447.09px;
+    width: 22.375rem; /* 358px */
+    height: 27.875rem; /* 447.09px */
     flex-direction: column;
-    gap: 20.3px;
+    gap: 1.265rem; /* 20.3px */
   }
   .mission-content-container {
-    width: 320px;
-    height: 101.77px;
-    padding: 0px 0px 10px 0px;
-    gap: 11.3px;
-    border-right: 0px;
+    width: 20rem; /* 320px */
+    height: 6.354375rem; /* 101.77px */
+    padding: 0 0 0.625rem; /* 0 0 10px */
+    gap: 0.70375rem; /* 11.3px */
+    border-right: 0;
     border-bottom: 1px solid #d9d9d9;
   }
   .main-content-p-3 {
-    width: 358px;
-    height: 32px;
-    font-size: 13px;
+    width: 22.375rem; /* 358px */
+    height: 2rem; /* 32px */
+    font-size: 0.8125rem; /* 13px */
     font-weight: 400;
-    line-height: 15.6px;
+    line-height: 0.975rem; /* 15.6px */
     text-align: left;
   }
   .mission-content-container-1 {
-    width: 358px;
-    height: 38.47px;
-    gap: 8.47px;
+    width: 22.375rem; /* 358px */
+    height: 2.4rem; /* 38.47px */
+    gap: 0.52875rem; /* 8.47px */
   }
   .main-content-heading {
-    font-size: 14px;
+    font-size: 0.875rem; /* 14 ```css
+px */
     font-weight: 500;
-    line-height: 16.1px;
+    line-height: 1.00625rem; /* 16.1px */
     text-align: left;
   }
   .join-us-container {
-    width: 356px;
-    height: 250.51px;
-    gap: 35.84px;
+    width: 22.375rem; /* 356px */
+    height: 15.625rem; /* 250.51px */
+    gap: 2.25rem; /* 35.84px */
   }
   .join-us-parent {
-    width: 356px;
-    height: 124.67px;
-    gap: 28.67px;
+    width: 22.375rem; /* 356px */
+    height: 7.75rem; /* 124.67px */
+    gap: 1.75rem; /* 28.67px */
   }
   .join-us {
-    width: 356px;
-    height: 28px;
-    font-size: 24px;
+    width: 22.375rem; /* 356px */
+    height: 1.75rem; /* 28px */
+    font-size: 1.5rem; /* 24px */
     font-weight: 600;
-    line-height: 27.6px;
+    line-height: 1.725rem; /* 27.6px */
     text-align: center;
   }
   .be-a-part {
-    width: 356px;
-    height: 68px;
-    font-size: 14px;
+    width: 22.375rem; /* 356px */
+    height: 4.25rem; /* 68px */
+    font-size: 0.875rem; /* 14px */
     font-weight: 400;
-    line-height: 16.8px;
+    line-height: 1.05rem; /* 16.8px */
     text-align: center;
   }
   .AU-contact-us {
-    width: 102.98px;
-    height: 40px;
+    width: 6.4375rem; /* 102.98px */
+    height: 2.5rem; /* 40px */
   }
   .AU-contact {
-    font-size: 13.02px;
+    font-size: 0.8125rem; /* 13.02px */
     font-weight: 500;
-    line-height: 15.62px;
+    line-height: 0.975rem; /* 15.62px */
     text-align: center;
   }
 }
