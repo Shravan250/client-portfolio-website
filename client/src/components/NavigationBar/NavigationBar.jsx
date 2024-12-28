@@ -9,7 +9,7 @@ import mobileCross from "../../assets/LandingPage/Navigation/Icon.svg";
 
 function NavigationBar() {
   const location = useLocation();
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 390);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 450);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const path = location.pathname;
 
@@ -40,7 +40,7 @@ function NavigationBar() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 390);
+      setIsMobile(window.innerWidth <= 450);
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);

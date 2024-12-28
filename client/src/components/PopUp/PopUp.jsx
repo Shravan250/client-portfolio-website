@@ -43,7 +43,7 @@ const PopUp = ({ onSubmit }) => {
           </div>
           <form className="popup-input-container" onSubmit={handleSubmit}>
             <div
-              className={`field ${
+              className={`popup-field ${
                 focusedField === "name" ? "input-focused" : ""
               }`}
             >
@@ -61,7 +61,7 @@ const PopUp = ({ onSubmit }) => {
             </div>
 
             <div
-              className={`field ${
+              className={`popup-field ${
                 focusedField === "email" ? "input-focused" : ""
               }`}
             >
@@ -78,7 +78,7 @@ const PopUp = ({ onSubmit }) => {
             </div>
 
             <div
-              className={`field ${
+              className={`popup-field ${
                 focusedField === "phone" ? "input-focused" : ""
               }`}
             >

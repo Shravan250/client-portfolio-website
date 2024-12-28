@@ -30,7 +30,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  background-color: var(--primary-color);
+  background-color: #1c6bff0f;
 }
 
 .ss-switch-btn {
@@ -509,7 +509,7 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 450px) {
   .smart-space-container {
     width: 100%;
     max-width: 390px;

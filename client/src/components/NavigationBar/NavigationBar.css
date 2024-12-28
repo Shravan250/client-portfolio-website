@@ -302,7 +302,7 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 450px) {
   .navigation-bar {
     width: 100%;
     padding: 0px 16px 0px 16px;
