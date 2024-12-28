@@ -76,7 +76,7 @@
 
 @media (max-width: 850px) {
   .catalog-container {
-    width: 768px;
+    width: 90%;
     gap: 70px;
   }
 
@@ -145,7 +145,7 @@
 
 @media (max-width: 390px) {
   .catalog-container {
-    width: 358px;
+    width: 90%;
     height: 354.72px;
     gap: 30px;
     flex-direction: column;
