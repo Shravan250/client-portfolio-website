@@ -16,8 +16,8 @@ function AppPromo() {
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      setIsMobile(width <= 390);
-      setIsTablet(width > 390 && width <= 850);
+      setIsMobile(width <= 450);
+      setIsTablet(width > 450 && width <= 850);
     };
 
     handleResize();
