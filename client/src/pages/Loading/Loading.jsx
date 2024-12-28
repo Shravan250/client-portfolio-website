@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Loading.css";
-import loadingScreen from "../../assets/loading.mp4";
+import { loadingScreen } from "../../video/index";
 
 const Loading = ({ onLoadingComplete }) => {
   const [isFading, setIsFading] = useState(false);
