@@ -86,6 +86,8 @@
 }
 
 .main-content-landing-page {
+  opacity: 0;
+  transition: opacity 1s;
   transform: translateY(1.25rem);
   transition: opacity 1s ease, transform 1s ease;
   display: flex;

@@ -55,7 +55,15 @@ const LandingPage = () => {
     setAnimationInProgress(true);
     setScrollPhase(nextPhase);
 
-    if (nextPhase === 5) setIsScrollLocked(false);
+    if (nextPhase === 5) {
+      setIsScrollLocked(false);
+      // Show main content after animation
+      setTimeout(() => {
+        document
+          .querySelector(".main-content-landing-page")
+          .classList.add("show");
+      }, 1000); // Match this timeout with your animation duration
+    }
 
     setTimeout(() => setAnimationInProgress(false), 1000);
   };
