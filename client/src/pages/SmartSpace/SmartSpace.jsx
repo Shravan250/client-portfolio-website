@@ -456,14 +456,14 @@ const SmartSpace = () => {
                               <div className="SS-slider-heading mb-10">
                                 Change light color
                               </div>
-                              <div class="slider-wrapper-DV">
-                                <div class="slider-ticks-DV">
-                                  <span class="slider-tick-DV"></span>
-                                  <span class="slider-tick-DV"></span>
-                                  <span class="slider-tick-DV"></span>
-                                  <span class="slider-tick-DV"></span>
-                                  <span class="slider-tick-DV"></span>
-                                  <span class="slider-tick-DV"></span>
+                              <div className="slider-wrapper-DV">
+                                <div className="slider-ticks-DV">
+                                  <span className="slider-tick-DV"></span>
+                                  <span className="slider-tick-DV"></span>
+                                  <span className="slider-tick-DV"></span>
+                                  <span className="slider-tick-DV"></span>
+                                  <span className="slider-tick-DV"></span>
+                                  <span className="slider-tick-DV"></span>
                                 </div>
 
                                 <input
@@ -504,8 +504,9 @@ const SmartSpace = () => {
                   <div className="SS-controller-container">
                     <div className="SS-text-content">
                       <div className="SS-text-heading">
-                        <p>Interact with</p>
-                        <span>Smart Home!</span>
+                        <p>
+                          Interact with <span>Smart Home!</span>
+                        </p>
                       </div>
                       <div className="SS-text-desc">
                         Click on the buttons on switchboard to view home
@@ -724,14 +725,14 @@ const SmartSpace = () => {
                               <div className="SS-slider-heading mb-10">
                                 Change light color
                               </div>
-                              <div class="slider-wrapper-DV">
-                                <div class="slider-ticks-DV">
-                                  <span class="slider-tick-DV"></span>
-                                  <span class="slider-tick-DV"></span>
-                                  <span class="slider-tick-DV"></span>
-                                  <span class="slider-tick-DV"></span>
-                                  <span class="slider-tick-DV"></span>
-                                  <span class="slider-tick-DV"></span>
+                              <div className="slider-wrapper-DV">
+                                <div className="slider-ticks-DV">
+                                  <span className="slider-tick-DV"></span>
+                                  <span className="slider-tick-DV"></span>
+                                  <span className="slider-tick-DV"></span>
+                                  <span className="slider-tick-DV"></span>
+                                  <span className="slider-tick-DV"></span>
+                                  <span className="slider-tick-DV"></span>
                                 </div>
 
                                 <input
@@ -798,8 +799,9 @@ const SmartSpace = () => {
               <div className="SS-controller-container">
                 <div className="SS-text-content">
                   <div className="SS-text-heading">
-                    <p>Interact with</p>
-                    <span>Smart Home!</span>
+                    <p>
+                      Interact with <span>Smart Home!</span>
+                    </p>
                   </div>
                   <div className="SS-text-desc">
                     Click on the buttons on switchboard to view home automation
@@ -935,8 +937,9 @@ const SmartSpace = () => {
               <div className="SS-controller-container">
                 <div className="SS-text-content">
                   <div className="SS-text-heading">
-                    <p>Interact with</p>
-                    <span>Smart Home!</span>
+                    <p>
+                      Interact with <span>Smart Home!</span>
+                    </p>
                   </div>
                   <div className="SS-text-desc">
                     Click on the buttons on switchboard to view home automation
