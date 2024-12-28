@@ -29,6 +29,28 @@ const LandingPage = () => {
     }
   };
 
+  const handleTouchEvent = (e) => {
+    const touch = e.touches[0];
+    const touchStartY = touch.clientY;
+
+    const handleTouchMove = (moveEvent) => {
+      const touchMoveY = moveEvent.touches[0].clientY;
+      const deltaY = touchStartY - touchMoveY;
+
+      if (animationInProgress) return;
+
+      if (deltaY > 50 && scrollPhase < 5) {
+        startAnimation(scrollPhase + 1);
+        window.removeEventListener("touchmove", handleTouchMove);
+      } else if (deltaY < -50 && scrollPhase > 0) {
+        startAnimation(scrollPhase - 1);
+        window.removeEventListener("touchmove", handleTouchMove);
+      }
+    };
+
+    window.addEventListener("touchmove", handleTouchMove);
+  };
+
   const startAnimation = (nextPhase) => {
     setAnimationInProgress(true);
     setScrollPhase(nextPhase);
@@ -41,14 +63,14 @@ const LandingPage = () => {
   useEffect(() => {
     if (isScrollLocked) {
       window.addEventListener("wheel", handleScrollEvent, { passive: false });
-      window.addEventListener("touchmove", handleScrollEvent, {
+      window.addEventListener("touchstart", handleTouchEvent, {
         passive: false,
       });
     }
 
     return () => {
       window.removeEventListener("wheel", handleScrollEvent);
-      window.removeEventListener("touchmove", handleScrollEvent);
+      window.removeEventListener("touchstart", handleTouchEvent);
     };
   }, [scrollPhase, animationInProgress, isScrollLocked]);
 
