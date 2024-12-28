@@ -130,7 +130,7 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 450px) {
   .catalog-container {
     width: 90%;
     height: auto; /* Allow height to adjust */
