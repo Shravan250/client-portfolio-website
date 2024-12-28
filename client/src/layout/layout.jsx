@@ -16,7 +16,7 @@ import Contact from "../pages/FooterPages/Contact/Contact";
 import AboutUs from "../pages/AboutUs/AboutUs";
 import SmartSpace from "../pages/SmartSpace/SmartSpace";
 import "./layout.css";
-import UploadCatalog from "../pages/Products/UploadCatalog";
+import UploadCatalog from "../pages/Products/UploadPDF.jsx";
 import ProductsCatalog from "../pages/Products/ProductsCatalog";
 import Products from "../pages/Products/Products";
 import SingleProduct from "../pages/SingleProduct/SingleProduct";

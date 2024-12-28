@@ -8,20 +8,12 @@ const contactRoutes = require("./routes/contactRoutes");
 const cookiesMiddleware = require("./middlewares/cookies");
 const productRoutes = require("./routes/productRoutes");
 const catalogRoutes = require("./routes/catalogRoutes");
-const multer = require("multer");
+const uploadRoutes = require("./routes/uploadRoutes");
 const path = require("path");
 const helmet = require("helmet");
 
 dotenv.config();
 connectDB();
-
-// const __dirname = path.resolve();
-
-// app.use(express.static(path.join(__dirname, "../client/build")));
-
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "../client/build", "index.html"));
-// });
 
 const app = express();
 
@@ -32,7 +24,10 @@ app.options("*", cors());
 // Allow requests from your frontend domain
 app.use(
   cors({
-    origin: "https://client-portfolio-website.onrender.com",
+    origin: [
+      "https://client-portfolio-website.onrender.com",
+      "http://localhost:5173",
+    ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
@@ -58,7 +53,7 @@ app.use(cookiesMiddleware);
 // Routes
 app.use("/api/contact", contactRoutes);
 app.use("/api/products", productRoutes);
-app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+app.use("/api/upload", uploadRoutes);
 app.use("/api/catalog", catalogRoutes);
 
 const PORT = process.env.PORT || 5001;

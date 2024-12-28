@@ -18,7 +18,6 @@ const ProductsCatalog = () => {
       document.body.appendChild(link);
       link.click();
     } catch (error) {
-      console.error(error);
       alert("Failed to download catalog.");
     }
   };
