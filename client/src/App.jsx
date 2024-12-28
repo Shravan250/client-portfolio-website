@@ -20,7 +20,7 @@ function App() {
     if (!hasSubmitted) {
       const timer = setTimeout(() => {
         setShowPopup(true);
-      }, 120000);
+      }, 20000);
 
       return () => clearTimeout(timer);
     }
