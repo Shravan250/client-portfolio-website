@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import "./ProductsCatalog.css";
+import "/src/pages/Products/ProductsCatalog.css";
 import catalogImage from "../../assets/ProductsCatalog/product catalogue.png";
 import downloadIcon from "../../assets/ProductsCatalog/Icon.png";
 import API_URL from "../../../config/config";

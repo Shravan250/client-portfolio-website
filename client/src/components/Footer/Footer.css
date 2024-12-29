@@ -1,12 +1,17 @@
 .footer-inner {
   position: absolute;
-  top: calc(50% - 33.375rem);    left: calc(50% - 89.25rem);    width: 178.5rem;    height: 67.125rem;    object-fit: cover;
+  top: calc(50% - 33.375rem);
+  left: calc(50% - 89.25rem);
+  width: 178.5rem;
+  height: 67.125rem;
+  object-fit: cover;
   opacity: 0.15;
   mix-blend-mode: overlay;
 }
 
 .talk-to-us {
-  width: 15rem;    position: relative;
+  width: 15rem;
+  position: relative;
   letter-spacing: 0.04em;
   line-height: 140%;
   text-transform: uppercase;
@@ -20,8 +25,10 @@
 }
 
 .seeking-personalized-support-container {
-  width: 20rem;    position: relative;
-  font-size: 1.75rem;    letter-spacing: -0.02em;
+  width: 20rem;
+  position: relative;
+  font-size: 1.75rem;
+  letter-spacing: -0.02em;
   line-height: 130%;
   font-weight: 500;
   display: inline-block;
@@ -33,7 +40,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1.25rem;  }
+  gap: 1.25rem;
+}
 
 .your-name {
   position: relative;
@@ -41,10 +49,12 @@
   line-height: 140%;
   text-transform: uppercase;
   opacity: 0.4;
-  font-size: 1rem;  }
+  font-size: 1rem;
+}
 
 .footer-input {
-  font-size: 0.875rem;    line-height: 140%;
+  font-size: 0.875rem;
+  line-height: 140%;
   background-color: #fbfbfb;
   color: black;
   width: 100%;
@@ -64,39 +74,49 @@
 .field {
   width: 100%;
   align-self: stretch;
-  border-radius: 0.75rem;    border: 1px solid rgba(77, 77, 77, 0.24);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(77, 77, 77, 0.24);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0.5625rem 0.75rem;    gap: 0.25rem;  }
+  padding: 0.5625rem 0.75rem;
+  gap: 0.25rem;
+}
 
 .field1 {
   width: 100%;
   align-self: stretch;
-  border-radius: 0.75rem;    border: 1px solid rgba(77, 77, 77, 0.24);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(77, 77, 77, 0.24);
   box-sizing: border-box;
-  height: 3.5rem;    display: flex;
+  height: 3.5rem;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0.5rem 0.75rem;  }
+  padding: 0.5rem 0.75rem;
+}
 
 .field2 {
   width: 100%;
   align-self: stretch;
-  border-radius: 0.75rem;    border: 1px solid rgba(77, 77, 77, 0.24);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(77, 77, 77, 0.24);
   box-sizing: border-box;
-  height: 6.4375rem;    display: flex;
+  height: 6.4375rem;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0.5rem 0.75rem;  }
+  padding: 0.5rem 0.75rem;
+}
 
 .field2 textarea {
   resize: none;
-  height: 6.4375rem;  }
+  height: 6.4375rem;
+}
 
 .group {
   align-self: stretch;
@@ -104,22 +124,27 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1rem;    color: #000;
+  gap: 1rem;
+  color: #000;
 }
 
 .send-request {
   position: relative;
-  line-height: 1.75rem;    font-weight: 500;
+  line-height: 1.75rem;
+  font-weight: 500;
   font-family: Matter-Medium;
 }
 
 .instance-parent {
   flex: 1;
-  border-radius: 0.75rem;    display: flex;
+  border-radius: 0.75rem;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 0.875rem 1.75rem;    gap: 0.5rem;  }
+  padding: 0.875rem 1.75rem;
+  gap: 0.5rem;
+}
 
 .pw-web-buttons {
   width: 100%;
@@ -128,7 +153,8 @@
   align-items: flex-start;
   justify-content: flex-start;
   text-align: center;
-  font-size: 1.125rem;    color: #f8f8f8;
+  font-size: 1.125rem;
+  color: #f8f8f8;
   background-color: #1c6bff;
   padding: 0;
   outline: none;
@@ -144,7 +170,10 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1.5rem;    width: 21.5rem;    height: 31.25rem;  }
+  gap: 1.5rem;
+  width: 21.5rem;
+  height: 31.25rem;
+}
 
 .top {
   align-self: stretch;
@@ -152,16 +181,21 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1.5rem;  }
+  gap: 1.5rem;
+}
 
 .feedback {
-  border-radius: 1rem;    background-color: #fbfbfb;
+  border-radius: 1rem;
+  background-color: #fbfbfb;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 2.5rem 1.5rem;    width: 24.5rem;    gap: 12.875rem;  }
+  padding: 2.5rem 1.5rem;
+  width: 24.5rem;
+  gap: 12.875rem;
+}
 
 .products-footer {
   position: relative;
@@ -177,7 +211,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 0.3125rem;    font-size: 0.875rem;    color: #252525;
+  gap: 0.3125rem;
+  font-size: 0.875rem;
+  color: #252525;
 }
 
 .section {
@@ -185,7 +221,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1.5rem;  }
+  gap: 1.5rem;
+}
 
 .footer-contact-us {
   align-self: stretch;
@@ -214,8 +251,10 @@
 }
 
 .eabrown-trademark-logo-on-whit {
-  width: 16.25rem;    position: relative;
-  height: 6.5625rem;    object-fit: cover;
+  width: 16.25rem;
+  position: relative;
+  height: 6.5625rem;
+  object-fit: cover;
 }
 
 .top2 {
@@ -232,7 +271,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 0.3125rem;    font-size: 0.875rem;    color: #252525;
+  gap: 0.3125rem;
+  font-size: 0.875rem;
+  color: #252525;
 }
 
 .top1 {
@@ -241,17 +282,22 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 4rem;  }
+  gap: 4rem;
+}
 
 .footer-vector-icon {
-  width: 1rem;    height: 1rem;    cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
 }
 
 .footer-item-icon {
-  width: 3.125rem;    border-radius: 50px;
+  width: 3.125rem;
+  border-radius: 50px;
   border: 1px solid rgba(101, 101, 101, 0.13);
   box-sizing: border-box;
-  height: 3.125rem;    display: flex;
+  height: 3.125rem;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -259,13 +305,17 @@
 }
 
 .rilinkedin-fill-icon {
-  width: 1.125rem;    height: 1.125rem;    overflow: hidden;
+  width: 1.125rem;
+  height: 1.125rem;
+  overflow: hidden;
   flex-shrink: 0;
   cursor: pointer;
 }
 
 .vector-icon2 {
-  width: 1.1875rem;    height: 1rem;    cursor: pointer;
+  width: 1.1875rem;
+  height: 1rem;
+  cursor: pointer;
 }
 
 .socialmedia {
@@ -273,7 +323,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 0.75rem;    width: 14.75rem;    height: 3.125rem;  }
+  gap: 0.75rem;
+  width: 14.75rem;
+  height: 3.125rem;
+}
 
 .copyright-effortless {
   position: relative;
@@ -301,11 +354,13 @@
 
 .footer-main {
   align-self: stretch;
-  width: 50rem;    display: flex;
+  width: 50rem;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 2rem 0;    box-sizing: border-box;
+  padding: 2rem 0;
+  box-sizing: border-box;
 }
 
 .feedback-parent {
@@ -313,8 +368,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 8rem;    width: 100%;
-   }
+  gap: 8rem;
+  width: 100%;
+}
 
 .footer {
   display: flex;
@@ -322,155 +378,247 @@
   align-items: center;
   background-color: #eaf2ff;
   width: 100%;
-  height: 45.875rem;    font-size: 0.75rem;    color: #1c6bff;
-  padding-top: 3.125rem;    overflow: hidden;
+  height: 45.875rem;
+  font-size: 0.75rem;
+  color: #1c6bff;
+  padding-top: 3.125rem;
+  overflow: hidden;
 }
 
 @media (max-width: 850px) {
   .footer {
-    width: 52.5rem;      height: 28rem;      gap: 4.4rem;    }
+    width: 52.5rem;
+    height: 28rem;
+    gap: 4.4rem;
+  }
   .feedback-parent {
-    width: 47.5rem;      height: 22.5rem;      gap: 4.4rem;    }
+    width: 47.5rem;
+    height: 22.5rem;
+    gap: 4.4rem;
+  }
   .feedback {
-    width: 15.1875rem;      height: 22.5rem;      padding: 1.5rem 0.93rem 0.3rem 0.93rem;      gap: 7.96875rem;    }
+    width: 15.1875rem;
+    height: 22.5rem;
+    padding: 1.5rem 0.93rem 0.3rem 0.93rem;
+    gap: 7.96875rem;
+  }
   .feedback-top {
     width: 100%;
-    height: 19.4375rem;      gap: 0.925rem;    }
+    height: 19.4375rem;
+    gap: 0.925rem;
+  }
   .intro {
-    width: 12.375rem;      height: 5.6875rem;      gap: 0.775rem;    }
+    width: 12.375rem;
+    height: 5.6875rem;
+    gap: 0.775rem;
+  }
   .talk-to-us {
     font-family: Matter;
-    font-size: 0.465rem;      font-weight: 500;
-    line-height: 0.651rem;      letter-spacing: 0.04em;
+    font-size: 0.465rem;
+    font-weight: 500;
+    line-height: 0.651rem;
+    letter-spacing: 0.04em;
     text-align: left;
   }
   .seeking-personalized-support-container {
     font-family: Matter;
-    font-size: 1.085rem;      font-weight: 500;
-    line-height: 1.414rem;      letter-spacing: -0.02em;
+    font-size: 1.085rem;
+    font-weight: 500;
+    line-height: 1.414rem;
+    letter-spacing: -0.02em;
     text-align: left;
-    width: 12.375rem;      height: 4.3125rem;      gap: 0;
+    width: 12.375rem;
+    height: 4.3125rem;
+    gap: 0;
   }
   .your-name {
     font-family: Matter;
-    font-size: 0.465rem;      font-weight: 400;
-    line-height: 0.651rem;      letter-spacing: 0.04em;
+    font-size: 0.465rem;
+    font-weight: 400;
+    line-height: 0.651rem;
+    letter-spacing: 0.04em;
     text-align: left;
   }
   .footer-input {
     font-family: Matter;
-    font-size: 0.54rem;      font-weight: 400;
-    line-height: 0.76rem;      text-align: left;
+    font-size: 0.54rem;
+    font-weight: 400;
+    line-height: 0.76rem;
+    text-align: left;
   }
   .field {
-    width: 13.25rem;      height: 2.226rem;      gap: 0.155rem;    }
+    width: 13.25rem;
+    height: 2.226rem;
+    gap: 0.155rem;
+  }
   .field1 {
-    width: 13.25rem;      height: 2.54rem;      gap: 0.155rem;    }
+    width: 13.25rem;
+    height: 2.54rem;
+    gap: 0.155rem;
+  }
   .field2 {
-    width: 13.25rem;      height: 3.99rem;      gap: 0.31rem;    }
+    width: 13.25rem;
+    height: 3.99rem;
+    gap: 0.31rem;
+  }
   .pw-web-buttons {
-    width: 13.25rem;      padding: 0.54rem 1.08rem;      gap: 0.31rem;    }
+    width: 13.25rem;
+    padding: 0.54rem 1.08rem;
+    gap: 0.31rem;
+  }
   .send-request {
     font-family: Matter;
-    font-size: 0.695rem;      font-weight: 500;
-    line-height: 1.09rem;      text-align: center;
+    font-size: 0.695rem;
+    font-weight: 500;
+    line-height: 1.09rem;
+    text-align: center;
   }
   .footer-main {
-    width: 27.5rem;      height: 22.5rem;      padding: 1.1rem 0;    }
+    width: 27.5rem;
+    height: 22.5rem;
+    padding: 1.1rem 0;
+  }
   .bottom {
-    width: 27.5rem;      height: 1.725rem;      justify-content: space-between;
+    width: 27.5rem;
+    height: 1.725rem;
+    justify-content: space-between;
   }
   .socialmedia {
-    width: 8.125rem;      height: 1.725rem;      gap: 0.4125rem;    }
+    width: 8.125rem;
+    height: 1.725rem;
+    gap: 0.4125rem;
+  }
   .footer-item-icon {
-    width: 2.25rem;      height: 2.25rem;    }
+    width: 2.25rem;
+    height: 2.25rem;
+  }
   .vector-icon2,
   .rilinkedin-fill-icon,
   .footer-vector-icon {
-    width: 0.74rem;      height: 0.74rem;    }
+    width: 0.74rem;
+    height: 0.74rem;
+  }
   .copyright-effortless-automat-wrapper {
-    width: 22.375rem;      display: flex;
+    width: 22.375rem;
+    display: flex;
     justify-content: flex-end;
   }
 }
 
 @media (max-width: 450px) {
   .footer {
-    width: 27.375rem;      height: 27.6875rem;      gap: 2.063rem;    }
+    width: 27.375rem;
+    height: 27.6875rem;
+    gap: 2.063rem;
+  }
   .feedback-parent {
-    width: 22.375rem;      height: 25.6875rem;      padding: 0.515rem 0 0.515rem 0;      gap: 2.5rem;  
+    width: 22.375rem;
+    height: 25.6875rem;
+    padding: 0.515rem 0 0.515rem 0;
+    gap: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
   .footer-main {
-    width: 22.375rem;      gap: 3.125rem;      display: flex;
+    width: 22.375rem;
+    gap: 3.125rem;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
   .top-section {
-    width: 22.375rem;      height: 4.3125rem;      display: flex;
+    width: 22.375rem;
+    height: 4.3125rem;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
   .section {
-    width: 6.3125rem;      height: 4.3125rem;      gap: 0.5375rem;  
+    width: 6.3125rem;
+    height: 4.3125rem;
+    gap: 0.5375rem;
     display: flex;
     flex-direction: column;
   }
   .section-bottom {
-    width: 8.125rem;      height: 6.3rem;      gap: 0.6875rem;  
+    width: 8.125rem;
+    height: 6.3rem;
+    gap: 0.6875rem;
     display: flex;
     flex-direction: column;
   }
   .trademark-logo {
-    width: 6.25rem;      height: 2.5rem;    }
+    width: 6.25rem;
+    height: 2.5rem;
+  }
   .footer-contact-us {
     font-family: Matter;
-    font-size: 0.6875rem;      font-weight: 500;
-    line-height: 1rem;      letter-spacing: 0.04em;
+    font-size: 0.6875rem;
+    font-weight: 500;
+    line-height: 1rem;
+    letter-spacing: 0.04em;
     text-align: left;
     text-transform: uppercase;
   }
   .footer-list-item {
     font-family: Matter;
-    font-size: 0.625rem;      font-weight: 400;
-    line-height: 0.875rem;      text-align: left;
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 0.875rem;
+    text-align: left;
     color: #252525;
   }
   .list {
     display: flex;
     flex-direction: column;
-    gap: 0.125rem;    }
+    gap: 0.125rem;
+  }
   .bottom-section {
-    width: 22.375rem;      height: 4.3125rem;      display: flex;
+    width: 22.375rem;
+    height: 4.3125rem;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
   .feedback {
-    border-radius: 1rem;      background-color: #fbfbfb;
+    border-radius: 1rem;
+    background-color: #fbfbfb;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 12.5rem;      height: 9.84375rem;      padding: 0.9375rem 0.625rem;      gap: 1rem;      border-radius: 0.3425rem;    }
+    width: 12.5rem;
+    height: 9.84375rem;
+    padding: 0.9375rem 0.625rem;
+    gap: 1rem;
+    border-radius: 0.3425rem;
+  }
   .seeking-personalized-support-container {
     font-family: Matter;
-    font-size: 0.875rem;      font-weight: 500;
-    line-height: 1.1375rem;      letter-spacing: -0.02em;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.1375rem;
+    letter-spacing: -0.02em;
     text-align: left;
     color: rgba(37, 37, 37, 0.4);
   }
   .field1 {
-    width: 12.1875rem;      height: 2.5rem;      gap: 0.3425rem; /* 5.48px ```css
+    width: 12.1875rem;
+    height: 2.5rem;
+    gap: 0.3425rem;
   }
   .pw-web-buttons {
-    width: 12.1875rem;      height: 2.5rem;    }
+    width: 12.1875rem;
+    height: 2.5rem;
+  }
   .footer-input {
     font-family: Matter;
-    font-size: 0.75rem;      font-weight: 400;
-    line-height: 1rem;      letter-spacing: 0.04em;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1rem;
+    letter-spacing: 0.04em;
     text-align: left;
   }
   .bottom {
@@ -481,19 +629,26 @@
     justify-content: space-between;
     text-align: right;
     color: #252525;
-    gap: 0.625rem;    }
+    gap: 0.625rem;
+  }
   .socialmedia {
-    width: 22.375rem;      display: flex;
+    width: 22.375rem;
+    display: flex;
     justify-content: flex-start;
   }
   .footer-item-icon {
-    width: 2.3125rem;      height: 2.3125rem;    }
+    width: 2.3125rem;
+    height: 2.3125rem;
+  }
   .vector-icon2,
   .rilinkedin-fill-icon,
   .footer-vector-icon {
-    width: 0.7375rem;      height: 0.7375rem;    }
+    width: 0.7375rem;
+    height: 0.7375rem;
+  }
   .copyright-effortless-automat-wrapper {
-    width: 22.375rem;      display: flex;
+    width: 22.375rem;
+    display: flex;
     justify-content: flex-end;
   }
   .mv-feedback-parent {
