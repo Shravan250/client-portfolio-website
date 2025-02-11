@@ -7,6 +7,7 @@ const routes = {
   contact: "/contact",
   about: "/about-us",
   smartSpace: "/smart-space",
+  downloadPDF: "/download-pdf",
 };
 
 export default routes;

@@ -26,7 +26,7 @@ app.use(
   cors({
     origin: [
       "https://client-portfolio-website.onrender.com",
-      "http://localhost:5173",
+      "http://localhost:5174",
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],

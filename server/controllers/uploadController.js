@@ -15,6 +15,7 @@ const uploadPDF = async (req, res) => {
       },
     });
 
+    console.log(newPdf);
     await newPdf.save();
     res.status(200).send("PDF uploaded successfully.");
   } catch (err) {
