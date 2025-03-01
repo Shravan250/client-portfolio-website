@@ -24,10 +24,7 @@ app.options("*", cors());
 // Allow requests from your frontend domain
 app.use(
   cors({
-    origin: [
-      "https://client-portfolio-website.onrender.com",
-      "http://localhost:5174",
-    ],
+    origin: "*",
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
