@@ -53,7 +53,7 @@ const Layout = () => {
           <Route path={routes.contact} element={<Contact />} />
           <Route path={routes.about} element={<AboutUs />} />
           <Route path={routes.smartSpace} element={<SmartSpace />} />
-          <Route path={routes.downloadPDF} element={<Download />} />
+          {/* <Route path={routes.downloadPDF} element={<Download />} /> */}
         </Routes>
       </div>
       {location.pathname !== "/single-product" && <Footer className="footer" />}
